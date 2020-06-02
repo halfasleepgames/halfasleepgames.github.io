@@ -1,0 +1,464 @@
+/* --- body */
+
+.js-fade-load,
+.js-fade-load2,
+.js-fade-content {
+  visibility: hidden;
+}
+
+.Body {
+  position: relative;
+  font-family: 'Akkurat', sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  background: #3e0f66;
+  padding: 0 0 3rem;
+}
+@media screen and (min-width: 960px) {
+  .Body {
+    padding: 18rem 0 7.5rem;
+  }
+}
+
+.Body--cs {
+  color: #222;
+  background: #fff;
+  text-align: center;
+  padding-bottom: 0;
+}
+@media screen and (min-width: 960px) {
+  .Body--cs {
+    text-align: left;
+    padding: 14rem 0 0;
+  }
+}
+.Body--cs .Nav-link::after {
+  background: #CDAEFF;
+}
+
+/* --- Nav */
+
+.Nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1.75rem;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 410px) {
+  .Nav {
+    padding: 2.25rem 3rem
+  }
+}
+@media screen and (min-width: 680px) {
+  .Nav {
+    padding: 3rem 3.5rem
+  }
+}
+@media screen and (min-width: 960px) {
+  .Nav {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+  }
+}
+
+.Nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 70%;
+  max-width: 20rem;
+}
+@media screen and (min-width: 410px) {
+  .Nav-menu {
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+.Nav-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: auto;
+}
+
+.Nav-logo {
+  position: relative;
+  max-width: 2rem;
+  line-height: 1;
+  margin-right: .8rem;
+  cursor: pointer;
+}
+@media screen and (min-width: 410px) {
+  .Nav-logo {
+    max-width: 2.5rem;
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .Nav-logo {
+    max-width: 3rem;
+    margin-right: 1.25rem;
+  }
+}
+.Nav-logo:hover .Nav-logo-letter {
+  transform: scale(1.1) translate(0,-.3rem);
+  -webkit-transform: scale(1.1) translate(0,-.3rem);
+  -ms-transform: scale(1.1) translate(0,-.3rem);
+}
+.Nav-logo:hover .Nav-logo-shadow {
+  transform: scale(.8) translateY(.6rem);
+  -webkit-transform: scale(.8) translateY(.6rem);
+  -ms-transform: scale(.8) translateY(.6rem);
+}
+
+.Nav-logo-letter,
+.Nav-logo-shadow {
+  display: block;
+  transition: transform .3s;
+}
+
+.Nav-logo-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  margin: auto;
+}
+
+.Nav-link {
+  position: relative;
+  margin: 0;
+  margin-bottom: .4rem;
+  font-size: 1.4rem;
+  line-height: 1;
+  transition: opacity .4s, transform .4s;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  margin-left: 1rem;
+}
+.Nav-link:hover {
+  opacity: 1;
+  color: #3a075d;
+  transform: scale(.9);
+  -webkit-transform: scale(.9);
+  -ms-transform: scale(.9);
+}
+.Nav-link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: #fff;
+  transition: transform .4s, opacity .4s;
+  z-index: -1;
+  opacity: 0;
+}
+.Nav-link:hover::after {
+  transform: scale(1.3, 2.1);
+  -webkit-transform: scale(1.3, 2.1);
+  -ms-transform: scale(1.3, 2.1);
+  opacity: 1;
+}
+.Nav-link--unselected {
+  opacity: .5;
+}
+@media screen and (min-width: 410px) {
+  .Nav-link {
+    margin-left: 2.25rem;
+    font-size: 1.6rem
+  }
+}
+@media screen and (min-width: 680px) {
+  .Nav-link {
+    margin-left: 3rem;
+    font-size: 1.8rem
+  }
+}
+
+.Nav-socialLink {
+  max-width: 2.3rem;
+  margin-left: 1rem;
+  opacity: .75;
+  transition: opacity .2s, transform .2s;
+}
+.Nav-socialLink:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+@media screen and (min-width: 410px) {
+  .Nav-socialLink {
+    max-width: 3rem;
+    margin-left: 1.2rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .Nav-socialLink {
+    margin-left: 1.8rem;
+  }
+}
+
+/* --- Link */
+
+.Link-mail { 
+  color: #222;
+  border-bottom: 0.4rem solid transparent;
+  transition: 0.1s border-bottom;
+}
+.Link-mail:hover { 
+  border-bottom: 0.4rem solid #9a5dff;
+}
+
+.Link-mail-symbol { 
+  color: #9a5dff;
+}
+
+/* --- Title */
+
+.Title {
+  font-size: 3.8rem;
+  line-height: 1.3;
+  margin-bottom: 0;
+  text-align: center;
+}
+@media screen and (min-width: 680px) {
+  .Title {
+    margin-top: 3rem;
+    font-size: 6.4rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Title {
+    font-size: 8rem;
+  }
+}
+
+.Title--sm {
+  font-size: 3.8rem;
+}
+@media screen and (min-width: 680px) {
+  .Title--sm {
+    font-size: 5.5rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Title--sm {
+    font-size: 7rem;
+  }
+}
+
+.Title-icon {
+  color: #9a5dff;
+}
+
+/* --- Subtitle */
+
+.Subtitle {
+  font-size: 2.2rem;
+  font-weight: normal;
+  line-height: 1.4;
+  margin: 0 0 7.5rem;
+  text-align: center;
+  color: #9a5dff;
+}
+@media screen and (min-width: 680px) {
+  .Subtitle {
+    font-size: 3rem;
+    margin-bottom: 9rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Subtitle {
+    font-size: 3.6rem;
+    margin-bottom: 12.5rem;
+  }
+}
+
+/* --- Card */
+
+.Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10% 12%;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.Card--1 {
+  background: #4c298e;
+  background-size: cover;
+}
+.Card--2 {
+  background: #057475;
+  background-size: cover;
+}
+@media screen and (min-width: 680px) {
+  .Card {
+    margin-bottom: 4.5rem;
+  }
+}
+
+.Card-badge {
+  max-width: 9rem;
+  margin: 0 auto 1.5rem;
+}
+@media screen and (min-width: 680px) {
+  .Card-badge {
+    max-width: 14rem;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Card-badge {
+    margin: 0;
+  }
+}
+
+.Card-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 960px) {
+  .Card-wrapper {
+    width: 66%;
+    text-align: left;
+    margin-left: 6rem;
+  }
+}
+
+.Card-title {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 0;
+}
+@media screen and (min-width: 680px) {
+  .Card-title {
+    font-size: 4.4rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Card-title {
+    font-size: 4.8rem;
+    transform: translateX(-0.3rem);
+  }
+}
+
+.Card-subtitle {
+  margin: 0 0 2rem;
+  font-size: 2.2rem;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #fff;
+}
+.Card-subtitle--pink {
+  color: #d49fff;
+}
+.Card-subtitle--blue {
+  color: #76f8ff;
+}
+@media screen and (min-width: 680px) {
+  .Card-subtitle {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Card-subtitle {
+    font-size: 2.6rem;
+  }
+}
+
+.Card-description  {
+  margin: 1rem 0 1.5rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #fff;
+}
+.Card-description--color {
+  color: #9a5dff;
+}
+@media screen and (min-width: 680px) {
+  .Card-description {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Card-description {
+    font-size: 2rem;
+  }
+}
+
+/* --- details list */
+
+.Detail-list {
+  text-align: center;
+  list-style: inside square;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 960px) {
+  .Detail-list {
+    text-align: left;
+  }
+}
+
+.Detail-list li {
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #9a5dff;
+}
+@media screen and (min-width: 680px) {
+  .Detail-list li {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Detail-list li {
+    font-size: 2rem;
+  }
+}
+
+.Detail-list li span {
+  position: relative;
+  left: -1rem;
+}
