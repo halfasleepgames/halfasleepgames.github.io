@@ -14,11 +14,17 @@
   -webkit-font-smoothing: antialiased;
   color: #fff;
   background: #3e0f66;
-  padding: 0 0 3rem;
+  padding-top: 10rem;
+}
+
+@media screen and (min-width: 680px) {
+  .Body {
+    padding-top: 12.5rem;
+  }
 }
 @media screen and (min-width: 960px) {
   .Body {
-    padding: 18rem 0 7.5rem;
+    padding-top: 18rem;
   }
 }
 
@@ -53,22 +59,18 @@
   justify-content: space-between;
   padding: 1.75rem;
   margin: 0;
+  position: fixed;
+  z-index: 99;
+  top: 0;
 }
 @media screen and (min-width: 410px) {
   .Nav {
-    padding: 2.25rem 3rem 1rem;
+    padding: 2.25rem 3rem;
   }
 }
 @media screen and (min-width: 680px) {
   .Nav {
     padding: 3rem 3.5rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Nav {
-    position: fixed;
-    z-index: 99;
-    top: 0;
   }
 }
 
@@ -216,13 +218,13 @@
 /* --- Contact */
 
 .Contact {
-  margin: 12rem auto 15rem;
+  margin: 12rem auto 18rem;
   padding: 0 3rem;
   max-width: 44rem;
 }
 @media screen and (min-width: 680px) {
   .Contact {
-    margin: 18rem auto 21rem;
+    margin: 18rem auto 24rem;
     max-width: 72rem;
   }
 }
@@ -341,7 +343,7 @@
 .Subtitle--highlight {
   color: #9069dd;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.9rem;
   letter-spacing: 0.2rem;
 }
 @media screen and (min-width: 680px) {
@@ -379,6 +381,11 @@
 @media screen and (min-width: 680px) {
   .Card {
     padding: 15% 12% 18%;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Card {
     margin-bottom: 4.5rem;
   }
 }
@@ -521,10 +528,10 @@
   .Card-corner3,
   .Card-corner4 {
     font-size: 1.1rem;
-    top: 1.6rem;
-    left: 1.6rem;
-    right: 1.6rem;
-    bottom: 1.6rem;
+    top: 1.8rem;
+    left: 1.8rem;
+    right: 1.8rem;
+    bottom: 1.8srem;
   }
 }
 
@@ -582,4 +589,38 @@
 .Detail-list li span {
   position: relative;
   left: -1rem;
+}
+
+/* --- Footer */
+
+.Footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1.75rem;
+  margin: 0;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+}
+@media screen and (min-width: 410px) {
+  .Footer {
+    padding: 2.25rem 3rem;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .Footer {
+    padding: 3rem 3.5rem;
+    font-size: 1.4rem;
+  }
 }
