@@ -365,14 +365,14 @@
 
 .Card {
   position: relative;
-  padding: 22% 12% 28%;
+  padding: 28% 12% 32%;
   margin-bottom: 1.5rem;
   text-align: center;
   overflow: hidden;
 }
 @media screen and (min-width: 410px) {
   .Card {
-    padding: 33% 12% 33%;
+    padding: 36% 12% 36%;
     margin-bottom: 2rem;
   }
 }
@@ -502,6 +502,18 @@
   left: 1rem;
   right: 1rem;
   bottom: 1rem;
+}
+@media screen and (min-width: 410px) {
+  .Card-corner1,
+  .Card-corner2,
+  .Card-corner3,
+  .Card-corner4 {
+    top: 1.2rem;
+    left: 1.2rem;
+    right: 1.2rem;
+    bottom: 1.2rem;
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 680px) {
   .Card-corner1,
