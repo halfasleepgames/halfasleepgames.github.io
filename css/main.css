@@ -223,7 +223,7 @@
 }
 
 .Nav-socialLink {
-  max-width: 2.3rem;
+  max-width: 2.2rem;
   margin-left: 1rem;
   opacity: .75;
   transition: opacity .2s, transform .2s;
@@ -234,20 +234,32 @@
 }
 @media screen and (min-width: 410px) {
   .Nav-socialLink {
-    max-width: 3rem;
+    max-width: 2.5rem;
     margin-left: 1.2rem;
   }
 }
 @media screen and (min-width: 680px) {
   .Nav-socialLink {
+    max-width: 3rem;
     margin-left: 1.8rem;
+  }
+}
+
+/* --- Contact */
+
+.Contact {
+  margin: 12rem 0 15rem;
+}
+@media screen and (min-width: 680px) {
+  .Contact {
+    margin: 18rem 0 21rem;
   }
 }
 
 /* --- Link */
 
 .Link-mail { 
-  color: #222;
+  color: #9a5dff;
   border-bottom: 0.4rem solid transparent;
   transition: 0.1s border-bottom;
 }
@@ -280,9 +292,11 @@
   }
 }
 
+/*
 .Title--transparent {
   color: transparent;
 }
+*/
 
 .Title--sm {
   font-size: 3.8rem;
@@ -304,7 +318,7 @@
 
 .Title-logotype {
   position: absolute;
-  display: block;
+  display: none;
   left: 0;
   right: 0;
   bottom: 0;
@@ -349,98 +363,74 @@
 /* --- Card */
 
 .Card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 10% 12%;
+  position: relative;
+  padding: 18% 12% 24%;
   margin-bottom: 1.5rem;
   text-align: center;
+  overflow: hidden;
 }
 .Card--1 {
-  background: #4c298e;
+  background: url('../img/melatoninLoop.gif') center no-repeat #4c298e;
   background-size: cover;
 }
 .Card--2 {
-  background: #057475;
+  background: url('../img/blockPartyBg.png') center no-repeat #057475;
   background-size: cover;
 }
 @media screen and (min-width: 680px) {
   .Card {
+    padding: 15% 12% 18%;
     margin-bottom: 4.5rem;
   }
 }
 
-.Card-badge {
+.Card-title {
   position: relative;
-  max-width: 9rem;
-  margin: 0 auto 1.5rem;
+  color: transparent;
+  font-size: 3.6rem;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: 1.2rem;
+  margin: 0 0 1rem;
+  z-index: 2;
 }
 @media screen and (min-width: 680px) {
-  .Card-badge {
-    max-width: 14rem;
-    margin-bottom: 3rem;
+  .Card-title {
+    font-size: 6rem;
   }
 }
 @media screen and (min-width: 960px) {
-  .Card-badge {
-    margin: 0;
+  .Card-title {
+    font-size: 7.2rem;
   }
 }
 
-.Card-badge-gif {
+.Card-title-logo {
   position: absolute;
+  width: 100%;
+  height: auto;
   margin: auto;
   left: 0;
+  right: 0;
   top: 0;
-  width: 100%;
-}
-
-.Card-wrapper {
-  width: 100%;
-  margin: 0 auto;
-}
-@media screen and (min-width: 960px) {
-  .Card-wrapper {
-    width: 66%;
-    text-align: left;
-    margin-left: 5rem;
-    margin-right: 0;
-  }
-}
-
-.Card-title {
-  color: #fff;
-  font-size: 3.2rem;
-  font-weight: normal;
-  line-height: 1.2;
-  margin: 0;
+  bottom: 0;
+  pointer-events: none;
 }
 @media screen and (min-width: 680px) {
-  .Card-title {
-    font-size: 4.4rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Card-title {
-    font-size: 4.8rem;
-    transform: translateX(-0.3rem);
+  .Card-title-logo {
+    height: 75%;
+    width: auto;
   }
 }
 
 .Card-subtitle {
+  position: relative;
   margin: 0 0 2rem;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-weight: normal;
   line-height: 1.3;
   color: #fff;
+  z-index: 2;
 }
 .Card-subtitle--pink {
   color: #d49fff;
@@ -450,34 +440,93 @@
 }
 @media screen and (min-width: 680px) {
   .Card-subtitle {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Card-subtitle {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 }
 
-.Card-description  {
-  margin: 1rem 0 1.5rem;
+.Card-description {
+  position: relative;
+  margin: 0 0 1.5rem;
   font-size: 1.6rem;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 1.4;
   color: #fff;
+  z-index: 2;
 }
-.Card-description--color {
-  color: #9a5dff;
+.Card-description--pink {
+  color: #dbc6ff;
+}
+.Card-description--blue {
+  color: #89ffed;
+}
+.Card-description:last-of-type {
+  margin-bottom: 0;
 }
 @media screen and (min-width: 680px) {
   .Card-description {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    line-height: 1.5;
   }
 }
 @media screen and (min-width: 960px) {
   .Card-description {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
+}
+
+.Card-corner1,
+.Card-corner2,
+.Card-corner3,
+.Card-corner4 {
+  position: absolute;
+  display: block;
+  margin: auto;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.3rem;
+  opacity: 0.5;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+}
+@media screen and (min-width: 680px) {
+  .Card-corner1,
+  .Card-corner2,
+  .Card-corner3,
+  .Card-corner4 {
+    font-size: 1.1rem;
+    top: 1.6rem;
+    left: 1.6rem;
+    right: 1.6rem;
+    bottom: 1.6rem;
+  }
+}
+
+.Card-corner1 {
+  bottom: auto;
+  right: auto;
+}
+
+.Card-corner2 {
+  bottom: auto;
+  left: auto;
+}
+
+.Card-corner3 {
+  top: auto;
+  right: auto;
+}
+
+.Card-corner4 {
+  top: auto;
+  left: auto;
 }
 
 /* --- details list */
