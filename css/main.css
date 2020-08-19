@@ -8,8 +8,8 @@
 
 .Body {
   position: relative;
-  font-family: 'Akkurat', sans-serif;
-  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   color: #222;
@@ -72,25 +72,24 @@
   justify-content: space-between;
 }
 
-.Nav-logo {
+.Nav-mark {
   position: relative;
   max-width: 3.8rem;
-  margin-bottom: 0.3rem;
   line-height: 1;
   cursor: pointer;
   transition: transform .2s;
 }
-.Nav-logo:hover {
+.Nav-mark:hover {
   transform: scale(1.1);
 }
 @media screen and (min-width: 410px) {
-  .Nav-logo {
+  .Nav-mark {
     max-width: 4.2rem;
   }
 }
 @media screen and (min-width: 680px) {
-  .Nav-logo {
-    max-width: 5rem;
+  .Nav-mark {
+    max-width: 6rem;
   }
 }
 
@@ -98,10 +97,10 @@
   position: relative;
   margin: 0;
   margin-bottom: .4rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 1;
   transition: opacity .4s, transform .4s;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .25rem;
   margin-left: 1.5rem;
@@ -115,7 +114,7 @@
 @media screen and (min-width: 680px) {
   .Nav-link {
     margin-left: 3rem;
-    font-size: 1.8rem
+    font-size: 1.7rem
   }
 }
 .Nav-link:hover {
@@ -151,12 +150,14 @@
 }
 
 .Nav-social {
+  display: flex;
 }
 
 .Nav-socialLink {
   display: block;
   max-width: 2rem;
   margin-bottom: 0.2rem;
+  margin-right: 1rem;
   transition: transform .2s;
 }
 .Nav-socialLink:hover {
@@ -172,6 +173,7 @@
   .Nav-socialLink {
     max-width: 3rem;
     margin-bottom: 0.4rem;
+    margin-right: 1.5rem;
   }
 }
 
@@ -248,8 +250,9 @@
 .Title {
   position: relative;
   font-size: 4rem;
+  font-weight: 300;
   line-height: 1.3;
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
   text-align: center;
 }
 @media screen and (min-width: 410px) {
@@ -291,11 +294,7 @@
   }
 }
 
-.Title-icon {
-  color: #9a5dff;
-}
-
-.Title-logotype {
+.Title-logo {
   position: absolute;
   display: block;
   left: 0;
@@ -306,17 +305,17 @@
   pointer-events: none;
 }
 @media screen and (min-width: 410px) {
-  .Title-logotype {
+  .Title-logo {
     max-width: 28rem;
   }
 }
 @media screen and (min-width: 680px) {
-  .Title-logotype {
-    max-width: 36rem;
+  .Title-logo {
+    max-width: 42rem;
   }
 }
 @media screen and (min-width: 960px) {
-  .Title-logotype {
+  .Title-logo {
     max-width: 50rem;
   }
 }
@@ -324,33 +323,20 @@
 /* --- Subtitle */
 
 .Subtitle {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight: normal;
   line-height: 1.5;
+  letter-spacing: 0.1rem;
   margin: 0;
   text-align: center;
   color: #222;
 }
 .Subtitle--highlight {
-  color: #9069dd;
-  text-transform: uppercase;
-  font-size: 1.9rem;
-  letter-spacing: 0.2rem;
-}
-@media screen and (min-width: 680px) {
-  .Subtitle {
-    font-size: 3rem;
-  }
-  .Subtitle--highlight {
-    font-size: 2.5rem;
-  }
+  color: #a086e4;
 }
 @media screen and (min-width: 960px) {
   .Subtitle {
-    font-size: 3.4rem;
-  }
-  .Subtitle--highlight {
-    font-size: 2.8rem;
+    font-size: 3.3rem;
   }
 }
 
@@ -497,7 +483,7 @@
   margin: auto;
   color: #fff;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   letter-spacing: 0.3rem;
   opacity: 0.5;
   top: 1rem;
@@ -514,7 +500,7 @@
     left: 1.2rem;
     right: 1.2rem;
     bottom: 1.2rem;
-    font-size: 1rem;
+    font-size: .9rem;
   }
 }
 @media screen and (min-width: 680px) {
@@ -601,8 +587,9 @@
   justify-content: space-between;
   padding: 1.75rem;
   margin: 0;
-  letter-spacing: 0.05rem;
-  font-size: 1.1rem;
+  letter-spacing: 0.15rem;
+  font-size: 1rem;
+  font-weight: 500;
   position: fixed;
   z-index: 99;
   bottom: 0;
