@@ -225,23 +225,23 @@
 /* --- Link */
 
 .Link-mail { 
-  color: #9069dd;
-  border-bottom: 0.3rem solid #9069dd;
+  color: #222;
+  border-bottom: 0.2rem solid #977bdd;
   transition: 0.1s border-bottom, color 0.1s;
 }
 .Link-mail:hover { 
-  color: #222;
-  border-bottom: 0.3rem solid #222;
+  color: #977bdd;
+  border-bottom: 0.2rem solid #977bdd;
 }
 @media screen and (min-width: 680px) {
   .Link-mail { 
-    color: #9069dd;
-    border-bottom: 0.4rem solid #9069dd;
+    color: #222;
+    border-bottom: 0.3rem solid #977bdd;
     transition: 0.1s border-bottom, color 0.1s;
   }
   .Link-mail:hover { 
-    color: #222;
-    border-bottom: 0.4rem solid #222;
+    color: #977bdd;
+    border-bottom: 0.3rem solid #977bdd;
   }
 }
 
@@ -332,7 +332,7 @@
   color: #222;
 }
 .Subtitle--highlight {
-  color: #a086e4;
+  color: #977bdd;
 }
 @media screen and (min-width: 960px) {
   .Subtitle {
@@ -587,7 +587,7 @@
   justify-content: space-between;
   padding: 1.75rem;
   margin: 0;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.12rem;
   font-size: 1rem;
   font-weight: 500;
   position: fixed;
@@ -603,7 +603,7 @@
 @media screen and (min-width: 680px) {
   .Footer {
     padding: 3rem 3.5rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
 .Footer-link:hover {
