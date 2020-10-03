@@ -112,9 +112,9 @@
   width: 100%;
   padding: 3rem;
   margin: 0;
-  position: fixed;
+  /*position: fixed;
   z-index: 99;
-  top: 0;
+  top: 0;*/
 }
 @media screen and (min-width: 680px) {
   .Nav {
