@@ -1,6 +1,6 @@
 sr.reveal('.js-reveal',
 {
-  delay: 50,
+  delay: 420,
   distance: '0',
   scale: 1,
   viewFactor: .1,
