@@ -332,10 +332,15 @@
 }
 
 .Footer-item {
-  font-size: 1.6rem;
+  font-size: 1rem;
   color: #a4a1b1;
   letter-spacing: 0.1rem;
   font-weight: 300;
+}
+@media screen and (min-width: 680px) {
+  .Footer-item {
+    font-size: 1.6rem;
+  }
 }
 
 /* --- pattern */
