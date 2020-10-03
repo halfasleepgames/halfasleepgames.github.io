@@ -230,11 +230,12 @@
   font-weight: 500;
   border: none;
   color: #fff;
-  background-color: #d4cef7;
+  background-color: #9a8ff0;
   outline: none;
   appearance: none;
   cursor: pointer;
-  transition: background-color .15s;
+  opacity: 0.67;
+  transition: opacity .15s;
 }
 @media screen and (min-width: 680px) {
   .button {
@@ -244,7 +245,7 @@
 }
 
 .button:hover {
-  background-color: #9a8ff0;
+  opacity: 1;
 }
 
 /* --- Description */
