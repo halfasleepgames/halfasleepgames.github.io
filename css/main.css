@@ -21,24 +21,24 @@
 
 .Header {
   margin: 0 auto;
-  padding: 12rem 3rem 10rem;
+  padding: 4rem 3rem 10rem;
   text-align: center;
 }
 @media screen and (min-width: 410px) {
   .Header {
-    padding: 14rem 3rem 12rem;
+    padding: 6rem 3rem 12rem;
     max-width: 100%;
   }
 }
 @media screen and (min-width: 680px) {
   .Header {
-    padding: 20rem 3rem 16rem;
+    padding: 8rem 3rem 16rem;
     max-width: 100%;
   }
 }
 @media screen and (min-width: 960px) {
   .Header {
-    padding: 28rem 3rem 24rem;
+    padding: 15rem 3rem 24rem;
     max-width: 100%;
   }
 }
