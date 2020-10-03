@@ -1,9 +1,9 @@
-sr.reveal('.js-fade-load',
+sr.reveal('.js-reveal',
 {
   delay: 50,
-  distance: '7.5rem',
+  distance: '6rem',
   scale: 1,
   viewFactor: .1,
-  duration: 600,
+  duration: 1000,
   opacity: 0
-}, 150);
+}, 100);
