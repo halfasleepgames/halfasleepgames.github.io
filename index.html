@@ -8,12 +8,11 @@
   <title>half asleep</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/root.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" href="./img/favicon.png">
-  <meta name="description" content="Another indie game studio based in Vancouver, BC.">
-  <meta name="keywords" content="half asleep, video games, indie games, games, indie, independent, game studio, game design, vancouver, bc, canada, startup, art, design, tech">
+  <meta name="description" content="Just another indie game studio based in Vancouver, BC.">
+  <meta name="keywords" content="half asleep, video games, indie games, games, indie, independent, studio, game studio, game design, vancouver, bc, canada, art, animation, design, tech">
   <!-- Open Graph data -->
   <meta property="og:title" content="half asleep">
   <meta property="og:type" content="website">
@@ -37,86 +36,62 @@
 
 <body class="Body">
   <nav class="Nav js-fade-load">
-    <div class="Nav-menu">
-      <a class="Nav-mark" href="./">
-        <img src="./img/mark.png"/>
-      </a>
-      <!--
-      <a class="Nav-link" href="./">
-        About
-      </a>
-      <a class="Nav-link" href="#contact">
-        Contact
-      </a>
-      -->
+    <div class="Nav-logo">
+      <img class="Nav-logo-mark" src="./img/logomark.gif" alt="logo"/>
+      <a class="Nav-logo-text" href="./">half asl<span style="color: transparent">ee</span>p</a>
     </div>
     <div class="Nav-social">
-      <div class="Nav-socialLink">
-        <a href="https://www.instagram.com/halfasleepgames/" target="_blank">
-          <img src="img/ig.png"/>
-        </a>
-      </div>
-      <div class="Nav-socialLink">
-        <a href="https://www.twitter.com/halfasleepgames" target="_blank">
-          <img src="img/twitter.png"/>
-        </a>
-      </div>
+      <a class="Nav-socialLink" href="https://www.instagram.com/halfasleepgames/" target="_blank">
+        <img src="img/ig.png" alt="instagram"/>
+      </a>
+      <a class="Nav-socialLink" href="https://www.twitter.com/halfasleepgames" target="_blank">
+        <img src="img/twitter.png" alt="twitter"/>
+      </a>
     </div>
   </nav>
   <header class="Header">
     <div class="js-fade-load">
-      <h1 class="Title Title--transparent">
-        half asleep
-        <img class="Title-logo" src="img/logo.png" alt="half asleep logo"/>
-        <img class="Title-logo" src="img/logo.gif" alt="half asleep mark"/>
+      <h1 class="Title">
+        Just another <span class="Title--highlight">indie&nbsp;game&nbsp;studio</span> from&nbsp;Vancouver,&nbsp;BC.
       </h1>
-      <h2 class="Subtitle">
-        Another <span class="Subtitle--highlight">indie game studio</span> based in Vancouver,&nbsp;BC.
-      </h2>
+      <a href="mailto:hi@halfasleepgames.com" class="button" target="_blank">Contact Us</a>
     </div>
   </header>
   <div class="Container">
-    <div class="Card Card--1 js-fade-load">
-      <h1 class="Card-title">
-        Melatonin
-        <img class="Card-title-logo" src="img/melatoninLogo.png" alt="Melatonin logo"/>
-      </h1>
-      <p class="Card-description Card-description--pink">
-        A fast-paced rhythm game about entering dreams. More details coming soon.
-      </p>
-      <span class="Card-corner1">Rhythm Game</span>
-      <span class="Card-corner2">2021</span>
-      <span class="Card-corner3">PC/Console</span>
-      <span class="Card-corner4">In development</span>
+    <div class="js-fade-load">
+      <img src="img/melatonin.png" alt="Melatonin key art"/>
+      <div class="description">
+        <div>
+          <h1 class="description-title">Melatonin</h1>
+          <p class="description-subtitle">Spring 2021</p>
+        </div>
+        <div>
+          <img class="description-platform" src="img/switch.png" alt="Nintendo Switch"/>
+          <img class="description-platform" src="img/steam.png" alt="Steam"/>
+          <img class="description-platform" src="img/epic.png" alt="Epic Games Store"/>
+        </div>
+      </div>
     </div>
-    <div class="Card Card--2 js-fade-load">
-      <h1 class="Card-title">
-        Block&nbsp;Party
-        <img class="Card-title-logo" src="img/blockPartyLogo.png"/>
-      </h1>
-      <p class="Card-description">
-        A run-based isometric action game inspired by arcade style shooters such as Nuclear Throne.
-      </p>
-      <span class="Card-corner1">Action/Roguelike</span>
-      <span class="Card-corner2">2022</span>
-      <span class="Card-corner3">PC/Console</span>
-      <span class="Card-corner4">In development</span>
+    <div class="js-fade-load">
+      <img src="img/blockparty.png" alt="Block Party key art"/>
+      <div class="description">
+        <div>
+          <h1 class="description-title">Block Party</h1>
+          <p class="description-subtitle">2023</p>
+        </div>
+        <div>
+          <img class="description-platform" src="img/steam.png" alt="Steam"/>
+          <img class="description-platform" src="img/epic.png" alt="Epic Games Store"/>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="Contact js-fade-load" id="contact">
-    <h2 class="Title Title--sm">
-      get in touch
-    </h2>
-    <h2 class="Subtitle">
-      Contact us at <a class="Link-mail" href="mailto:hi@halfasleep.games" target="_blank">hi@halfasleep.games</a> for more details on the games we're working on.
-    </h2>
   </div>
   <footer class="Footer js-fade-load">
     <div>
-      half asleep © 2020
+      <span class="Footer-item">© half asleep games ltd.</span>
     </div>
     <div>
-      <a class="Footer-link" target="_blank" href="mailto:hi@halfasleep.games">hi@halfasleep.games</a>
+      <a class="Footer-item" target="_blank" href="mailto:hi@halfasleep.games">hi@halfasleep.games</a>
     </div>
   </footer>
   <div class="Pattern">
