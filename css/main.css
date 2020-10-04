@@ -248,6 +248,18 @@
   opacity: 1;
 }
 
+/* --- Video */
+
+.video {
+  position: relative;
+}
+
+.video-player {
+  position: absolute;
+  width: 100%;
+}
+
+
 /* --- Description */
 
 .description {
