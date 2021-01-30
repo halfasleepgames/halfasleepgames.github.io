@@ -145,12 +145,13 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
-  padding: 3rem;
+  padding: 2rem 2.5rem;
   margin: 0;
+  background-color: #51497a;
 }
 @media screen and (min-width: 680px) {
   .Nav {
-    padding: 4.5rem;
+    padding: 3rem 3.5rem;
   }
 }
 
@@ -160,26 +161,30 @@
 }
 
 .Nav-logo-text {
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1;
   font-weight: 500;
+  font-family: 'integral';
+  letter-spacing: 0.2rem;
+  color: #9a8ff0;
 }
 @media screen and (min-width: 680px) {
   .Nav-logo-text {
-    font-size: 3rem
+    font-size: 2.4rem
   }
 }
 @media screen and (min-width: 1200px) {
   .Nav-logo-text {
-    font-size: 3.4rem
+    font-size: 2.6rem
   }
 }
 
 .Nav-logo-mark {
   position: absolute;
-  width: 26%;
-  top: -4.5%;
-  left: 65.5%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
   margin: auto;
   line-height: 1;
   pointer-events: none;
@@ -503,8 +508,5 @@ a.button:hover {
 .Pattern-line {
   width: 1px;
   height: 100%;
-  background-color: #fff;
-}
-.Pattern-line--light {
-  background-color: #555;
+  background-color: #9a8ff0;
 }
