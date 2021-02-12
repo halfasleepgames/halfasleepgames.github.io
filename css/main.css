@@ -297,15 +297,20 @@ a.button:hover {
 
 /* --- Video */
 
-.video {
+.animation {
   position: relative;
 }
 
-.video-player {
+.animation-gif {
   position: absolute;
   width: 100%;
+  z-index: 2;
 }
 
+.animation-backup {
+  position: relative;
+  z-index: 1;
+}
 
 /* --- Description */
 
