@@ -273,7 +273,7 @@ div.button {
 
 .button {
   margin: 0 auto;
-  padding: 1.2rem 1.6rem;
+  padding: 1.4rem 1.8rem;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   font-weight: 500;
@@ -286,7 +286,7 @@ div.button {
 }
 @media screen and (min-width: 680px) {
   .button {
-    padding: 1.6rem 2rem;
+    padding: 1.8rem 2.2rem;
     font-size: 1.8rem;
   }
 }
@@ -376,8 +376,8 @@ a.button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.2rem 0 1rem;
-  background-color: #a499f5;
+  padding: 1.1rem 0 1rem;
+  background-color: #aea5f8;
   border-radius: 99rem;
   transition: opacity 0.15s;
   max-width: 23rem;
