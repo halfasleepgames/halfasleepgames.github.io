@@ -7,12 +7,11 @@
 }
 
 .Body {
-  position: relative;
-  font-family: 'Inter', sans-serif;
+  position: relative; 
+  font-family: 'Lexend Exa', sans-serif;
   font-size: 1.5rem;
-  font-weight: normal;
   -webkit-font-smoothing: antialiased;
-  color: #46326b;
+  color: #433280;
   background: #fff;
 }
 
@@ -161,35 +160,29 @@
 }
 
 .Nav-logo-text {
-  font-size: 1.7rem;
+  position: absolute;
+  margin: auto;
+  left: 0;
   line-height: 1;
-  font-weight: 500;
-  font-family: 'integral', sans-serif;
-  letter-spacing: 0.3rem;
   color: #fff;
   z-index: -1;
-}
-@media screen and (min-width: 680px) {
-  .Nav-logo-text {
-    font-size: 2.5rem
-  }
-}
-@media screen and (min-width: 1200px) {
-  .Nav-logo-text {
-    font-size: 2.9rem
-  }
+  pointer-events: none;
 }
 
-.Nav-logo-mark {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+.Nav-logo-img {
+  max-width: 12rem;
   line-height: 1;
-  pointer-events: none;
   z-index: 99;
+}
+@media screen and (min-width: 680px) {
+  .Nav-logo-img {
+    max-width: 16rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Nav-logo-img {
+    max-width: 20rem;
+  }
 }
 
 .Nav-social {
@@ -226,21 +219,16 @@
 
 .Title {
   margin: 0 0 3.4rem;
-  font-size: 2rem;
-  font-weight: normal;
-    line-height: 1.4;
-  letter-spacing: 0.1rem;
+  font-size: 2.2rem;
+  line-height: 1.6;
+  letter-spacing: -0.1rem;
   text-align: center;
-}
-.Title--highlight {
-  font-family: 'integral', sans-serif;
-  letter-spacing: 0.2rem;
-  color: #9a8ff0;
 }
 @media screen and (min-width: 410px) {
   .Title {
     margin: 0 0 4rem;
     font-size: 2.4rem;
+    letter-spacing: -0.2rem;
   }
 }
 @media screen and (min-width: 680px) {
@@ -251,12 +239,13 @@
 }
 @media screen and (min-width: 960px) {
   .Title {
-    font-size: 4rem;
+    font-size: 4.2rem;
+    letter-spacing: -0.3rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .Title {
-    font-size: 4.5rem;
+    font-size: 4.6rem;
   }
 }
 
@@ -264,10 +253,10 @@
 
 a.button {
   cursor: pointer;
-  background-color: #9a8ff0;
+  background-color: #A89AFF;
 } 
 
-div.button {
+div.button { /* disabled button */
   background-color: #cfcbdd;
 }
 
@@ -275,13 +264,11 @@ div.button {
   margin: 0 auto;
   padding: 1.4rem 1.8rem;
   font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  font-weight: 500;
   border: none;
   color: #fff;
   outline: none;
   appearance: none;
-  opacity: 0.67;
+  opacity: 1;
   transition: opacity .15s;
 }
 @media screen and (min-width: 680px) {
@@ -292,7 +279,7 @@ div.button {
 }
 
 a.button:hover {
-  opacity: 1;
+  opacity: 0.9;
 }
 
 /* --- Video */
@@ -335,7 +322,6 @@ a.button:hover {
 
 .description-title {
   font-size: 1.6rem;
-  letter-spacing: 0.1rem;
   line-height: 1;
   margin: 0 0 0.3rem;
 }
@@ -377,10 +363,10 @@ a.button:hover {
   align-items: center;
   justify-content: center;
   padding: 1.1rem 0 1rem;
-  background-color: #aea5f8;
+  background-color: #998AF9;
   border-radius: 99rem;
   transition: opacity 0.15s;
-  max-width: 23rem;
+  max-width: 24rem;
   margin: 0 auto;
 }
 .LaunchBox-button:hover {
@@ -388,12 +374,12 @@ a.button:hover {
 }
 @media screen and (min-width: 410px) {
   .LaunchBox-button {
-    max-width: 25rem;
+    max-width: 26rem;
   }
 }
 @media screen and (min-width: 960px) {
   .LaunchBox-button {
-    max-width: 32rem;
+    max-width: 34rem;
   }
 }
 
@@ -410,23 +396,23 @@ a.button:hover {
 @media screen and (min-width: 960px) {
   .LaunchBox-platform {
     max-width: 4rem;
-    margin-right: 1.7rem;
+    margin-right: 1.6rem;
   }
 }
 
 .LaunchBox-description {
   color: #fff;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 @media screen and (min-width: 410px) {
   .LaunchBox-description {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 @media screen and (min-width: 960px) {
   .LaunchBox-description {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -434,11 +420,11 @@ a.button:hover {
   color: #b4b0d1;
   margin-top: 1.5rem;
   line-height: 1.5;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 @media screen and (min-width: 410px) {
   .LaunchBox-label {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 @media screen and (min-width: 680px) {
@@ -481,20 +467,16 @@ a.button:hover {
 }
 
 .Footer-item {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #a199c5;
-  letter-spacing: 0.1rem;
-  font-weight: 300;
 }
 @media screen and (min-width: 680px) {
   .Footer-item {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 
 /* --- Closer */ 
-
-.Closer {}
 
 .Closer-spacer {
   margin-top: 6rem;
