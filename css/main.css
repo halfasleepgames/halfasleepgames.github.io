@@ -171,6 +171,7 @@
 }
 
 .Nav-logo-img {
+  display: block;
   max-width: 12rem;
   line-height: 1;
   z-index: 99;
@@ -264,6 +265,7 @@ div.button { /* disabled button */
   margin: 0 auto;
   padding: 1.4rem 1.8rem;
   font-size: 1.4rem;
+  font-weight:  400;
   letter-spacing: 0.1rem;
   border: none;
   color: #fff;
