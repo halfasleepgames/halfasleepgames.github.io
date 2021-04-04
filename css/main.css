@@ -263,7 +263,7 @@ div.button { /* disabled button */
 .button {
   margin: 0 auto;
   padding: 1.4rem 1.8rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   border: none;
   color: #fff;
   outline: none;
@@ -274,7 +274,7 @@ div.button { /* disabled button */
 @media screen and (min-width: 680px) {
   .button {
     padding: 1.8rem 2.2rem;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
 
