@@ -11,8 +11,9 @@
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
-  color: #433280;
+  color: #5F4E9A;
   background: #fff;
 }
 
@@ -21,25 +22,26 @@
 
 .Header {
   margin: 0 auto;
-  padding: 4.8rem 3rem 8.6rem;
-  text-align: center;
+  padding: 3rem 3rem 6rem;
 }
 @media screen and (min-width: 410px) {
   .Header {
-    padding: 6.5rem 3rem 10rem;
     max-width: 100%;
   }
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 690px) {
   .Header {
-    padding: 9rem 3rem 14rem;
-    max-width: 100%;
+    padding: 6rem 3rem 10rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Header {
-    padding: 15rem 3rem 21rem;
-    max-width: 100%;
+    padding: 10rem 3rem 13rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Header {
+    padding: 12rem 3rem 15rem;
   }
 }
 
@@ -54,30 +56,6 @@
   }
 }
 
-.Page-Header {
-  margin: 0 auto;
-  padding: 4rem 3rem 8rem;
-  text-align: center;
-}
-@media screen and (min-width: 410px) {
-  .Page-Header {
-    padding: 6rem 3rem 10rem;
-    max-width: 100%;
-  }
-}
-@media screen and (min-width: 680px) {
-  .Page-Header {
-    padding: 8rem 3rem 13rem;
-    max-width: 100%;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Page-Header {
-    padding: 15rem 3rem 18rem;
-    max-width: 100%;
-  }
-}
-
 /* --- container */
 
 .Container {
@@ -89,7 +67,7 @@
     max-width: 32rem;
   }
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 690px) {
   .Container {
     max-width: 58.5rem;
   }
@@ -116,7 +94,7 @@
     max-width: 32rem;
   }
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 690px) {
   .Bleed {
     max-width: 100%;
   }
@@ -135,110 +113,172 @@
 /* --- Nav */
 
 .Nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
-  padding: 2.25rem 2.5rem;
-  margin: 0;
+  padding: 2.75rem 0;
+  margin: 0 auto;
   background-color: #fff;
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 690px) {
   .Nav {
-    padding: 3.25rem 3.5rem;
-  }
-}
-
-.Nav-logo {
-  display: block;
-  position: relative;
-}
-
-.Nav-logo-text {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  font-size: 2rem;
-  line-height: 1;
-  color: #fff;
-  z-index: -1;
-  pointer-events: none;
-}
-
-.Nav-logo-img {
-  display: block;
-  max-width: 12rem;
-  line-height: 1;
-  z-index: 99;
-}
-@media screen and (min-width: 680px) {
-  .Nav-logo-img {
-    max-width: 16rem;
+    padding: 3.2rem 0;
   }
 }
 @media screen and (min-width: 960px) {
-  .Nav-logo-img {
-    max-width: 20rem;
+  .Nav {
+    padding: 3.6rem 0;
+  }
+}
+
+.Nav-mark {
+  display: block;
+  max-width: 3.5rem;
+  border: 0.8rem solid #998AF9;
+  background-color: #998AF9;
+  line-height: 1;
+}
+@media screen and (min-width: 690px) {
+  .Nav-mark {
+    max-width: 4.8rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Nav-mark {
+    max-width: 6.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Nav-mark {
+    max-width: 6.8rem;
+  }
+}
+
+.Nav-type {
+  margin-top: 1rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.15rem;
+}
+@media screen and (min-width: 690px) {
+  .Nav-type {
+    margin-top: 1.4rem;
+    font-size: 3.1rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Nav-type {
+    margin-top: 2rem;
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Nav-type {
+    margin-top: 2.3rem;
+    font-size: 4.1rem;
   }
 }
 
 .Nav-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: 3.5rem;
+}
+@media screen and (min-width: 690px) {
+  .Nav-social {
+    width: 4.8rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Nav-social {
+    width: 6.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Nav-social {
+    width: 6.8rem;
+  }
+}
+
+.Nav-social-boxes {
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  max-width: 3.2rem;
+}
+@media screen and (min-width: 690px) {
+  .Nav-social-boxes {
+    max-width: 4.5rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Nav-social-boxes {
+    max-width: 5.4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Nav-social-boxes {
+    max-width: 5.7rem;
+  }
 }
 
 .Nav-socialLink {
   display: block;
-  max-width: 2.4rem;
-  margin-left: 1rem;
   line-height: 1;
 }
-@media screen and (min-width: 680px) {
-  .Nav-socialLink {
-    max-width: 3.2rem;
-    margin-left: 1.5rem;
+.Nav-socialLink--mail {
+  border: 0.8rem solid #C3A7FF;
+  background-color: #C3A7FF;
+}
+@media screen and (min-width: 690px) {
+  .Nav-socialLink--mail {
+    border: 1.2rem solid #C3A7FF;
   }
 }
-@media screen and (min-width: 1200px) {
-  .Nav-socialLink {
-    max-width: 3.6rem;
+.Nav-socialLink--ig {
+  border: 0.8rem solid #A496FC;
+  background-color: #A496FC;
+  position: absolute;
+  margin-top: 100%;
+}
+@media screen and (min-width: 690px) {
+  .Nav-socialLink--ig {
+    border: 1.2rem solid #A496FC;
+  }
+}
+.Nav-socialLink--twitter {
+  border: 0.8rem solid #ABC3FF;
+  background-color: #ABC3FF;
+  margin-top: 200%;
+  position: absolute;
+}
+@media screen and (min-width: 690px) {
+  .Nav-socialLink--twitter {
+    border: 1.2rem solid #ABC3FF;
   }
 }
 
 /* --- Title */
 
 .Title {
-  margin: 0 0 3.4rem;
+  margin: 0;
   font-size: 2.4rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  text-align: center;
 }
 @media screen and (min-width: 410px) {
   .Title {
-    margin: 0 0 4rem;
-    font-size: 2.6rem;
+    margin: 0;
+    font-size: 2.8rem;
   }
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 690px) {
   .Title {
-    margin: 0 0 4.5rem;
-    font-size: 3.4rem;
+    margin: 0;
+    font-size: 3.6rem;
   }
 }
 @media screen and (min-width: 960px) {
@@ -246,9 +286,9 @@
     font-size: 4.4rem;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .Title {
-    font-size: 4.8rem;
+    font-size: 5.2rem;
   }
 }
 
@@ -256,7 +296,7 @@
 
 a.button {
   cursor: pointer;
-  background-color: #A89AFF;
+  background-color: #998AF9;
 } 
 
 div.button { /* disabled button */
@@ -276,7 +316,7 @@ div.button { /* disabled button */
   opacity: 1;
   transition: opacity .15s;
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 690px) {
   .button {
     padding: 1.8rem 2.2rem;
     font-size: 1.7rem;
@@ -319,7 +359,7 @@ a.button:hover {
   width: 100%;
   margin: 0 0 9rem;
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 690px) {
   .description {
     margin: 0 0 14rem;
   }
@@ -330,7 +370,7 @@ a.button:hover {
   line-height: 1;
   margin: 0 0 0.3rem;
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 690px) {
   .description-title {
     font-size: 2rem;
   }
@@ -340,7 +380,7 @@ a.button:hover {
   font-size: 1.2rem;
   margin: 0;
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 690px) {
   .description-subtitle {
     font-size: 1.5rem;
   }
@@ -350,7 +390,7 @@ a.button:hover {
   max-width: 2.6rem;
   margin-left: 1.2rem;
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 690px) {
   .description-platform {
     max-width: 4rem;
     margin-left: 1.5rem;
@@ -359,19 +399,24 @@ a.button:hover {
 
 /* --- LaunchBox */
 
-.LaunchBox {
-  text-align: center;
+.LaunchBox-space {
+  height: 2rem;
+}
+@media screen and (min-width: 690px) {
+  .LaunchBox-space {
+    height: 4rem;
+  }
 }
 
 .LaunchBox-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.9rem 0;
+  padding: 0.7rem 0;
   background-color: #998AF9;
   border-radius: 99rem;
   transition: opacity 0.15s;
-  max-width: 24rem;
+  max-width: 23.5rem;
   margin: 0 auto;
 }
 .LaunchBox-button:hover {
@@ -379,6 +424,7 @@ a.button:hover {
 }
 @media screen and (min-width: 410px) {
   .LaunchBox-button {
+    padding: 0.9rem 0;
     max-width: 26rem;
   }
 }
@@ -407,7 +453,6 @@ a.button:hover {
 
 .LaunchBox-description {
   color: #fff;
-  text-align: center;
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0.1rem;
@@ -434,7 +479,7 @@ a.button:hover {
     font-size: 1.4rem;
   }
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 690px) {
   .LaunchBox-label {
     font-size: 1.7rem;
   }
@@ -467,7 +512,7 @@ a.button:hover {
     padding: 2.25rem 3rem;
   }
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 690px) {
   .Footer {
     padding: 4.5rem;
   }
@@ -477,7 +522,7 @@ a.button:hover {
   font-size: 1.1rem;
   color: #a199c5;
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 690px) {
   .Footer-item {
     font-size: 1.5rem;
   }
@@ -517,7 +562,7 @@ a.button:hover {
     margin-left: -38rem;
   }
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 690px) {
   .Pattern {
     width: 100rem;
     margin-left: -50rem;
