@@ -206,21 +206,21 @@
   position: relative;
   width: 100%;
   margin-left: auto;
-  max-width: 3.2rem;
+  max-width: 3.4rem;
 }
 @media screen and (min-width: 690px) {
   .Nav-social-boxes {
-    max-width: 4.5rem;
+    max-width: 4.7rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Nav-social-boxes {
-    max-width: 5.4rem;
+    max-width: 5.6rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .Nav-social-boxes {
-    max-width: 5.7rem;
+    max-width: 6rem;
   }
 }
 
@@ -237,21 +237,10 @@
     border: 1.2rem solid #C3A7FF;
   }
 }
-.Nav-socialLink--ig {
-  border: 0.8rem solid #A496FC;
-  background-color: #A496FC;
-  position: absolute;
-  margin-top: 100%;
-}
-@media screen and (min-width: 690px) {
-  .Nav-socialLink--ig {
-    border: 1.2rem solid #A496FC;
-  }
-}
 .Nav-socialLink--twitter {
   border: 0.8rem solid #ABC3FF;
   background-color: #ABC3FF;
-  margin-top: 200%;
+  margin-top: 100%;
   position: absolute;
 }
 @media screen and (min-width: 690px) {
