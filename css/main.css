@@ -414,12 +414,12 @@ a.button:hover {
 @media screen and (min-width: 410px) {
   .LaunchBox-button {
     padding: 0.9rem 0;
-    max-width: 26rem;
+    max-width: 27rem;
   }
 }
 @media screen and (min-width: 960px) {
   .LaunchBox-button {
-    max-width: 32rem;
+    max-width: 33rem;
   }
 }
 
@@ -430,13 +430,13 @@ a.button:hover {
 @media screen and (min-width: 410px) {
   .LaunchBox-platform {
     max-width: 3rem;
-    margin-right: 1rem;
+    margin-right: 1.1rem;
   }
 }
 @media screen and (min-width: 960px) {
   .LaunchBox-platform {
     max-width: 4rem;
-    margin-right: 1.5rem;
+    margin-right: 1.6rem;
   }
 }
 
@@ -448,12 +448,12 @@ a.button:hover {
 }
 @media screen and (min-width: 410px) {
   .LaunchBox-description {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 960px) {
   .LaunchBox-description {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 }
 
