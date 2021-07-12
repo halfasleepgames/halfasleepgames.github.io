@@ -442,23 +442,23 @@ a.button:hover {
 
 .LaunchBox-description {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 400;
   letter-spacing: 0.1rem;
 }
 @media screen and (min-width: 410px) {
   .LaunchBox-description {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 960px) {
   .LaunchBox-description {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 }
 
 .LaunchBox-label {
-  color: #b4b0d1;
+  color: #a8a4ca;
   margin-top: 1.5rem;
   line-height: 1.5;
   font-size: 1.3rem;
