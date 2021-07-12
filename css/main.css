@@ -22,7 +22,7 @@
 
 .Header {
   margin: 0 auto;
-  padding: 3rem 3rem 6rem;
+  padding: 3rem 3rem 5rem;
 }
 @media screen and (min-width: 410px) {
   .Header {
@@ -31,17 +31,17 @@
 }
 @media screen and (min-width: 690px) {
   .Header {
-    padding: 6rem 3rem 10rem;
+    padding: 6rem 3rem 8rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Header {
-    padding: 10rem 3rem 13rem;
+    padding: 10rem 3rem 12rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .Header {
-    padding: 12rem 3rem 15rem;
+    padding: 12rem 3rem 14rem;
   }
 }
 
@@ -261,7 +261,7 @@
 @media screen and (min-width: 370px) {
   .Title {
     margin: 0;
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
 }
 @media screen and (min-width: 690px) {
@@ -277,7 +277,7 @@
 }
 @media screen and (min-width: 1200px) {
   .Title {
-    font-size: 5.5rem;
+    font-size: 5.2rem;
   }
 }
 
