@@ -320,17 +320,42 @@ a.button:hover {
 
 .animation {
   position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 56.25%;
 }
 
-.animation-gif {
+.animation-border {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  margin: auto;
+  z-index: 3;
+  border: 0.1rem solid #f0ecfa;
+  pointer-events: none;
+}
+
+.animation-motion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
   z-index: 2;
 }
 
 .animation-backup {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
   z-index: 1;
+  pointer-events: none;
 }
 
 /* --- Description */
