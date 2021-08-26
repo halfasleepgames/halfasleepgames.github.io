@@ -248,6 +248,18 @@
     border: 1.2rem solid #ABC3FF;
   }
 }
+.Nav-socialLink--discord {
+  border: 0.8rem solid #8793FF;
+  background-color: #8793FF;
+  margin-top: 200%;
+  position: absolute;
+}
+@media screen and (min-width: 690px) {
+  .Nav-socialLink--discord {
+    border: 1.2rem solid #8793FF;
+  }
+}
+
 
 /* --- Title */
 
