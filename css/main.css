@@ -293,41 +293,6 @@
   }
 }
 
-/* --- Button */
-
-a.button {
-  cursor: pointer;
-  background-color: #998AF9;
-} 
-
-div.button { /* disabled button */
-  background-color: #cfcbdd;
-}
-
-.button {
-  margin: 0 auto;
-  padding: 1.4rem 1.8rem;
-  font-size: 1.4rem;
-  font-weight:  400;
-  letter-spacing: 0.1rem;
-  border: none;
-  color: #fff;
-  outline: none;
-  appearance: none;
-  opacity: 1;
-  transition: opacity .15s;
-}
-@media screen and (min-width: 690px) {
-  .button {
-    padding: 1.8rem 2.2rem;
-    font-size: 1.7rem;
-  }
-}
-
-a.button:hover {
-  opacity: 0.9;
-}
-
 /* --- Video */
 
 .animation {
@@ -381,6 +346,7 @@ a.button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -393,7 +359,50 @@ a.button:hover {
 @media screen and (min-width: 690px) {
   .description {
     margin: 0 0 14rem;
+    flex-direction: row;
   }
+}
+
+.description-buttons {
+  display: flex;
+  justify-content: space-between;
+} 
+
+.description-button {
+  display: block;
+  cursor: pointer;
+  background-color: #998AF9;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1rem 1.2rem;
+  font-size: 1.2rem;
+  font-weight:  400;
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 99rem;
+  color: #fff;
+  outline: none;
+  appearance: none;
+  opacity: 1;
+  transition: opacity .15s;
+}
+@media screen and (min-width: 690px) {
+  .description-button {
+    margin-left: 0;
+    margin-right: 0.8rem;
+    padding: 1.6rem 2.2rem;
+    font-size: 1.6rem;
+  }
+}
+
+.description-button:hover {
+  opacity: 0.9;
+}
+
+.description-button--disabled { /* disabled button */
+  background-color: #cfcbdd;
 }
 
 .description-title {
@@ -420,11 +429,15 @@ a.button:hover {
 .description-platform {
   max-width: 2.6rem;
   margin-left: 1.2rem;
+  margin-right: 1.2rem;  
+  margin-top: 1.6rem;
 }
 @media screen and (min-width: 690px) {
   .description-platform {
     max-width: 4rem;
     margin-left: 1.5rem;
+    margin-right: 0;  
+    margin-top: 0;
   }
 }
 
