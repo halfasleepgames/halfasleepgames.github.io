@@ -370,7 +370,6 @@
 
 .description-button {
   display: block;
-  cursor: pointer;
   background-color: #998AF9;
   margin-left: 0.4rem;
   margin-right: 0.4rem;
@@ -397,7 +396,11 @@
   }
 }
 
-.description-button:hover {
+a.description-button {
+  cursor: pointer;
+}
+
+a.description-button:hover {
   opacity: 0.9;
 }
 
