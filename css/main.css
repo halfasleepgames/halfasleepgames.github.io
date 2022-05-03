@@ -17,7 +17,6 @@
   background: #fff;
 }
 
-
 /* --- Header */
 
 .Header {
@@ -42,6 +41,78 @@
 @media screen and (min-width: 1200px) {
   .Header {
     padding: 12rem 3rem 14rem;
+  }
+}
+
+.Header-h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+@media screen and (min-width: 370px) {
+  .Header-h1 {
+    margin: 0;
+    font-size: 2.9rem;
+  }
+}
+@media screen and (min-width: 690px) {
+  .Header-h1 {
+    margin: 0;
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Header-h1 {
+    font-size: 4.8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Header-h1 {
+    font-size: 5.2rem;
+  }
+}
+
+.Header-h2 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+@media screen and (min-width: 370px) {
+  .Header-h2 {
+    margin: 0;
+    font-size: 2.9rem;
+  }
+}
+@media screen and (min-width: 690px) {
+  .Header-h2 {
+    margin: 0;
+    font-size: 4rem;
+  }
+}
+
+.Header-description {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 2rem;
+  line-height: 1.45;
+  color: #a8a4ca;
+}
+@media screen and (min-width: 370px) {
+  .Header-description {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 2.4rem;
+  }
+}
+@media screen and (min-width: 690px) {
+  .Header-description {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 2.6rem;
   }
 }
 
@@ -257,39 +328,6 @@
 @media screen and (min-width: 690px) {
   .Nav-socialLink--discord {
     border: 1.2rem solid #8793FF;
-  }
-}
-
-
-/* --- Title */
-
-.Title {
-  margin: 0;
-  font-size: 2.4rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  line-height: 1.6;
-}
-@media screen and (min-width: 370px) {
-  .Title {
-    margin: 0;
-    font-size: 2.9rem;
-  }
-}
-@media screen and (min-width: 690px) {
-  .Title {
-    margin: 0;
-    font-size: 4rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Title {
-    font-size: 4.8rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .Title {
-    font-size: 5.2rem;
   }
 }
 
