@@ -482,6 +482,106 @@ a.description-button:hover {
   }
 }
 
+/* --- Cta */
+
+.Cta-h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.55;
+}
+@media screen and (min-width: 370px) {
+  .Cta-h1 {
+    margin: 0;
+    font-size: 2.9rem;
+  }
+}
+@media screen and (min-width: 690px) {
+  .Cta-h1 {
+    margin: 0;
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Cta-h1 {
+    font-size: 4.8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Cta-h1 {
+    font-size: 5.2rem;
+  }
+}
+
+.Cta-description {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  line-height: 1.45;
+  color: #a8a4ca;
+}
+@media screen and (min-width: 370px) {
+  .Cta-description {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 690px) {
+  .Cta-description {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Cta-description {
+    font-size: 2.6rem;
+  }
+}
+
+.Cta-space {
+  height: 2rem;
+}
+@media screen and (min-width: 690px) {
+  .Cta-space {
+    height: 4rem;
+  }
+}
+
+.Cta-button {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  background-color: #998AF9;
+  border-radius: 99rem;
+  transition: opacity 0.15s;
+  margin: 0 auto;
+}
+.Cta-button:hover {
+  opacity: 0.9;
+}
+@media screen and (min-width: 690px) {
+  .Cta-button {
+    padding: 0.8rem 2.4rem;
+  }
+}
+
+.Cta-label {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+@media screen and (min-width: 690px) {
+  .Cta-label {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Cta-label {
+    font-size: 1.8rem;
+  }
+}
+
 /* --- LaunchBox */
 
 .LaunchBox-space {
