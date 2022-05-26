@@ -484,6 +484,31 @@ a.description-button:hover {
 
 /* --- Cta */
 
+.Cta {
+  margin: 0 auto;
+  padding: 3rem 3rem 5rem;
+}
+@media screen and (min-width: 410px) {
+  .Cta {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 690px) {
+  .Cta {
+    padding: 6rem 3rem 8rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Cta {
+    padding: 10rem 3rem 12rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Cta {
+    padding: 12rem 3rem 14rem;
+  }
+}
+
 .Cta-h1 {
   margin: 0;
   font-size: 2.4rem;
@@ -554,7 +579,7 @@ a.description-button:hover {
   background-color: #998AF9;
   border-radius: 99rem;
   transition: opacity 0.15s;
-  margin: 0 auto;
+  margin: 0 auto 1rem;
 }
 .Cta-button:hover {
   opacity: 0.9;
