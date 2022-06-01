@@ -127,6 +127,64 @@
   }
 }
 
+/* --- Gallery */
+
+.Gallery {
+  margin: 0 auto;
+  padding: 3rem 3rem 5rem;
+}
+@media screen and (min-width: 410px) {
+  .Gallery {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 690px) {
+  .Gallery {
+    padding: 6rem 3rem 8rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Gallery {
+    padding: 10rem 3rem 12rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Gallery {
+    padding: 12rem 3rem 14rem;
+  }
+}
+
+.Gallery-h2 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+@media screen and (min-width: 370px) {
+  .Gallery-h2 {
+    margin: 0;
+    font-size: 2.9rem;
+  }
+}
+@media screen and (min-width: 690px) {
+  .Gallery-h2 {
+    margin: 0;
+    font-size: 4rem;
+  }
+}
+
+/* --- Screenshot */
+
+.Asset {
+  border: 0.1rem solid #f0ecfa;
+}
+
+.AssetLogo {
+  border: 0.1rem solid #f0ecfa;
+  background-color: #fff;
+}
+
 /* --- container */
 
 .Container {
@@ -693,12 +751,6 @@ a.description-button:hover {
   .LaunchBox-label {
     font-size: 1.7rem;
   }
-}
-
-/* --- Screenshot */
-
-.Asset {
-  border: 0.1rem solid #f0ecfa;
 }
 
 /* --- Footer */
