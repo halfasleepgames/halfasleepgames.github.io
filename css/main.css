@@ -130,17 +130,17 @@
 }
 @media screen and (min-width: 690px) {
   .Header-descriptionSm {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Header-descriptionSm {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .Header-descriptionSm {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -288,107 +288,163 @@
   width: 100%;
   padding: 1.2rem 0 0;
   margin: 0 auto;
-  background-color: #fff;
+}
+@media screen and (min-width: 410px) {
+  .Nav {
+    padding: 2rem 0 0;
+  }
 }
 @media screen and (min-width: 690px) {
   .Nav {
-    padding: 3rem 0 0;
+    padding: 3rem 0 6rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Nav {
-    padding: 3.6rem 0 0;
+    padding: 3.6rem 0 8.6rem;
   }
 }
 
-.Nav-mark {
+.Nav-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 690px) {
+  .Nav-logo {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+}
+
+.Nav-logo-mark {
   display: block;
   max-width: 3.5rem;
-  border: 0.8rem solid #998AF9;
+  margin-right: 1rem;
+  border: 0.6rem solid #998AF9;
   background-color: #998AF9;
   line-height: 1;
 }
 @media screen and (min-width: 690px) {
-  .Nav-mark {
-    max-width: 4.6rem;
+  .Nav-logo-mark {
+    max-width: 4.4rem;
+    margin-right: 1.3rem;
   }
 }
 @media screen and (min-width: 960px) {
-  .Nav-mark {
-    max-width: 6rem;
+  .Nav-logo-mark {
+    max-width: 5rem;
+    margin-right: 1.5rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  .Nav-mark {
-    max-width: 6.6rem;
+  .Nav-logo-mark {
+    max-width: 5.6rem;
+    margin-right: 2rem;
   }
 }
 
-.Nav-type {
-  margin-top: 1rem;
+.Nav-logo-type {
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.1rem;
 }
 @media screen and (min-width: 690px) {
-  .Nav-type {
-    margin-top: 1.4rem;
-    font-size: 3.1rem;
+  .Nav-logo-type {
+    font-size: 2.8rem;
   }
 }
 @media screen and (min-width: 960px) {
-  .Nav-type {
-    margin-top: 2rem;
-    font-size: 3.5rem;
+  .Nav-logo-type {
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  .Nav-type {
-    margin-top: 2.3rem;
-    font-size: 4.1rem;
+  .Nav-logo-type {
+    font-size: 3.4rem;
   }
 }
 
-.Nav-social {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  margin-left: auto;
-  margin-bottom: 0rem;
-}
-@media screen and (min-width: 960px) {
-  .Nav-social {
-    margin-bottom: 3rem;
-  }
-}
-.Nav-social-link {
+.Nav-logo-button {
   display: block;
-  width: 3.4rem;
-  height: 3.4rem;
-  border-width: 0.8rem;
-  border-style: solid;
+  max-width: 3.5rem;
+  border: 0.6rem solid #C3A7FF;
+  background-color: #C3A7FF;
   line-height: 1;
+  cursor: pointer;
 }
 @media screen and (min-width: 690px) {
-  .Nav-social-link {
-    width: 4.2rem;
-    height: 4.2rem;
-    border-width: 1rem;
+  .Nav-logo-button {
+    display: none;
+  }
+}
+
+.Nav-links {
+  display: none;
+}
+@media screen and (min-width: 690px) {
+  .Nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.Nav-links-page {
+  display: none;
+}
+@media screen and (min-width: 690px) {
+  .Nav-links-page {
+    display: block;
+    margin-right: 2rem;
+    padding: 0.6rem 0;
+    font-size: 1.6rem;
+    font-weight:  400;
+    letter-spacing: 0.1rem;
+    line-height: 1;
   }
 }
 @media screen and (min-width: 960px) {
-  .Nav-social-link {
-    width: 5.2rem;
-    height: 5.2rem;
+  .Nav-links-page {
+    margin-right: 2.4rem;
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Nav-links-page {
+    margin-right: 3rem;
+    font-size: 2rem;
+  }
+}
+
+.Nav-links-social {
+  display: none;
+}
+@media screen and (min-width: 690px) {
+  .Nav-links-social {
+    display: block;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-style: solid;
+    border-width: 1rem;
+    line-height: 1;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Nav-links-social {
+    width: 5rem;
+    height: 5rem;
     border-width: 1.3rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  .Nav-social-link {
-    width: 6rem;
-    height: 6rem;
+  .Nav-links-social {
+    width: 5.8rem;
+    height: 5.8rem;
     border-width: 1.6rem;
   }
 }
@@ -877,4 +933,32 @@ a.ProjectDescription-button:hover {
 }
 .disabledBg {
   background-color: #cfcbdd;
+}
+.activeBrand {
+  border-bottom-style: solid;
+  border-bottom-width: 0.4rem; 
+  border-bottom-color: #998AF9; 
+}
+.inactiveBrand {
+  border-bottom-style: solid;
+  border-bottom-width: 0.4rem; 
+  border-bottom-color: transparent;
+  transition: border-bottom-color 0.15s ease-in-out;
+}
+.inactiveBrand:hover {
+  border-bottom-color: #998AF9; 
+}
+.activePink {
+  border-bottom-style: solid;
+  border-bottom-width: 0.4rem; 
+  border-bottom-color: #C3A7FF; 
+}
+.inactivePink {
+  border-bottom-style: solid;
+  border-bottom-width: 0.4rem; 
+  border-bottom-color: transparent;
+  transition: border-bottom-color 0.15s ease-in-out;
+}
+.inactivePink:hover {
+  border-bottom-color: #C3A7FF; 
 }
