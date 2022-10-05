@@ -510,6 +510,50 @@
   }
 }
 
+/* --- List */
+
+.List {
+  padding-left: 2rem;
+  text-align: left;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+@media screen and (min-width: 690px) {
+  .List {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .List {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .List {
+    font-size: 2rem;
+  }
+}
+.List-item {
+  margin-bottom: 1.2rem;
+}
+.List-item-publication {
+  color: #5F4E9A;
+  font-weight: 400;
+}
+.List-item-link {
+  border-bottom-width: 0.2rem;
+  border-bottom-color: #f0ecfa;
+  border-bottom-style: solid;
+  transition: border-bottom-color ease-in-out 0.1s;
+}
+.List-item-link:hover {
+  border-bottom-color: #C3A7FF;
+}
+.List-item-date {
+  color: #a8a4ca;
+}
+
 /* --- Double Layer */
 
 .DoubleLayer {
