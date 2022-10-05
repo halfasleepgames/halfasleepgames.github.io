@@ -21,7 +21,7 @@
 
 .Header {
   margin: 0 auto;
-  padding: 3rem 3rem 5rem;
+  padding: 0 2rem 5rem 2rem;
 }
 @media screen and (min-width: 410px) {
   .Header {
@@ -30,89 +30,117 @@
 }
 @media screen and (min-width: 690px) {
   .Header {
-    padding: 6rem 3rem 8rem;
+    padding: 0 3rem 8rem 3rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Header {
-    padding: 10rem 3rem 12rem;
+    padding: 0 3rem 11rem 3rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .Header {
-    padding: 12rem 3rem 14rem;
+    padding: 0 3rem 13rem 3rem;
   }
 }
 
-.Header-h1 {
+.Header-titleMd {
   margin: 0;
   font-size: 2.4rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  line-height: 1.55;
+  line-height: 1.4;
 }
 @media screen and (min-width: 370px) {
-  .Header-h1 {
+  .Header-titleMd {
     margin: 0;
     font-size: 2.9rem;
   }
 }
 @media screen and (min-width: 690px) {
-  .Header-h1 {
+  .Header-titleMd {
     margin: 0;
     font-size: 4rem;
   }
 }
 @media screen and (min-width: 960px) {
-  .Header-h1 {
+  .Header-titleMd {
     font-size: 4.8rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  .Header-h1 {
+  .Header-titleMd {
     font-size: 5.2rem;
   }
 }
 
-.Header-h2 {
+.Header-titleLg {
   margin: 0;
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  line-height: 1.6;
-}
-@media screen and (min-width: 370px) {
-  .Header-h2 {
-    margin: 0;
-    font-size: 2.9rem;
-  }
+  line-height: 1.4;
 }
 @media screen and (min-width: 690px) {
-  .Header-h2 {
-    margin: 0;
-    font-size: 4rem;
+  .Header-titleLg {
+    font-size: 4.6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Header-titleLg {
+    font-size: 5.4rem;
   }
 }
 
-.Header-description {
+.Header-descriptionMd {
   margin-top: 1rem;
   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 84rem;
   font-size: 2rem;
-  line-height: 1.45;
+  line-height: 1.4;
   color: #a8a4ca;
 }
-@media screen and (min-width: 370px) {
-  .Header-description {
+@media screen and (min-width: 690px) {
+  .Header-descriptionMd {
     margin-top: 1rem;
     margin-bottom: 0;
-    font-size: 2.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.6rem;
+    line-height: 1.6;
+  }
+}
+
+.Header-descriptionSm {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 84rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #a8a4ca;
+}
+@media screen and (min-width: 410px) {
+  .Header-descriptionSm {
+    font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 690px) {
-  .Header-description {
-    margin-top: 1rem;
-    margin-bottom: 0;
-    font-size: 2.6rem;
+  .Header-descriptionSm {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Header-descriptionSm {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Header-descriptionSm {
+    font-size: 2.2rem;
   }
 }
 
@@ -131,7 +159,10 @@
 
 .Gallery {
   margin: 0 auto;
-  padding: 3rem 3rem 5rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 @media screen and (min-width: 410px) {
   .Gallery {
@@ -140,18 +171,24 @@
 }
 @media screen and (min-width: 690px) {
   .Gallery {
-    padding: 6rem 3rem 8rem;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Gallery {
-    padding: 10rem 3rem 12rem;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .Gallery {
-    padding: 12rem 3rem 14rem;
+    padding-top: 12rem;
+    padding-bottom: 14rem;
   }
+}
+.Gallery:first-of-type{
+  padding-top: 0;
 }
 
 .Gallery-h2 {
@@ -174,7 +211,7 @@
   }
 }
 
-/* --- Screenshot */
+/* --- Asset */
 
 .Asset {
   border: 0.1rem solid #f0ecfa;
@@ -183,6 +220,9 @@
 .AssetLogo {
   border: 0.1rem solid #f0ecfa;
   background-color: #fff;
+  background-image: url("../img/transparent.png");
+  background-repeat: repeat;
+  background-size: 2rem;
 }
 
 /* --- container */
@@ -212,7 +252,7 @@
   }
 }
 
-/* --- bleed */
+/* --- Bleed */
 
 .Bleed {
   max-width: 100%;
@@ -246,18 +286,18 @@
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
-  padding: 2.75rem 0;
+  padding: 1.2rem 0 0;
   margin: 0 auto;
   background-color: #fff;
 }
 @media screen and (min-width: 690px) {
   .Nav {
-    padding: 3.2rem 0;
+    padding: 3rem 0 0;
   }
 }
 @media screen and (min-width: 960px) {
   .Nav {
-    padding: 3.6rem 0;
+    padding: 3.6rem 0 0;
   }
 }
 
@@ -289,7 +329,7 @@
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 1;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1rem;
 }
 @media screen and (min-width: 690px) {
   .Nav-type {
@@ -311,99 +351,63 @@
 }
 
 .Nav-social {
-  width: 3.5rem;
-}
-@media screen and (min-width: 690px) {
-  .Nav-social {
-    width: 4.6rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Nav-social {
-    width: 6rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .Nav-social {
-    width: 6.6rem;
-  }
-}
-
-.Nav-social-boxes {
   display: flex;
   flex-direction: column;
   position: relative;
   width: 100%;
   margin-left: auto;
-  max-width: 3.4rem;
+  margin-bottom: 0rem;
+}
+@media screen and (min-width: 960px) {
+  .Nav-social {
+    margin-bottom: 3rem;
+  }
+}
+.Nav-social-link {
+  display: block;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-width: 0.8rem;
+  border-style: solid;
+  line-height: 1;
 }
 @media screen and (min-width: 690px) {
-  .Nav-social-boxes {
-    max-width: 4.7rem;
+  .Nav-social-link {
+    width: 4.2rem;
+    height: 4.2rem;
+    border-width: 1rem;
   }
 }
 @media screen and (min-width: 960px) {
-  .Nav-social-boxes {
-    max-width: 5.6rem;
+  .Nav-social-link {
+    width: 5.2rem;
+    height: 5.2rem;
+    border-width: 1.3rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  .Nav-social-boxes {
-    max-width: 6rem;
+  .Nav-social-link {
+    width: 6rem;
+    height: 6rem;
+    border-width: 1.6rem;
   }
 }
 
-.Nav-socialLink {
-  display: block;
-  line-height: 1;
-}
-.Nav-socialLink--mail {
-  border: 0.8rem solid #C3A7FF;
-  background-color: #C3A7FF;
-}
-@media screen and (min-width: 690px) {
-  .Nav-socialLink--mail {
-    border: 1.2rem solid #C3A7FF;
-  }
-}
-.Nav-socialLink--twitter {
-  border: 0.8rem solid #ABC3FF;
-  background-color: #ABC3FF;
-  margin-top: 100%;
-  position: absolute;
-}
-@media screen and (min-width: 690px) {
-  .Nav-socialLink--twitter {
-    border: 1.2rem solid #ABC3FF;
-  }
-}
-.Nav-socialLink--discord {
-  border: 0.8rem solid #8793FF;
-  background-color: #8793FF;
-  margin-top: 200%;
-  position: absolute;
-}
-@media screen and (min-width: 690px) {
-  .Nav-socialLink--discord {
-    border: 1.2rem solid #8793FF;
-  }
-}
+/* --- Double Layer */
 
-/* --- Animation */
-
-.animation {
+.DoubleLayer {
   position: relative;
   width: 100%;
   margin: 0 auto;
   padding-top: 56%;
 }
 @media screen and (min-width: 690px) {
-  .animation {
+  .DoubleLayer {
     padding-top: 56.25%;
   }
 }
 
-.animation-border {
+.DoubleLayer-border {
   position: absolute;
   top: 0;
   left: 0;
@@ -415,7 +419,7 @@
   pointer-events: none;
 }
 
-.animation-motion {
+.DoubleLayer-motion {
   position: absolute;
   top: 0;
   left: 0;
@@ -425,7 +429,7 @@
   z-index: 2;
 }
 
-.animation-backup {
+.DoubleLayer-backup {
   position: absolute;
   top: 0;
   left: 0;
@@ -436,9 +440,9 @@
   pointer-events: none;
 }
 
-/* --- Description */
+/* --- Project Description */
 
-.description {
+.ProjectDescription {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -453,26 +457,26 @@
   margin: 0 0 9rem;
 }
 @media screen and (min-width: 690px) {
-  .description {
+  .ProjectDescription {
     margin: 0 0 14rem;
     flex-direction: row;
   }
 }
 
-.description-buttons {
+.ProjectDescription-buttons {
   display: flex;
   justify-content: space-between;
 } 
 
-.description-button {
+.ProjectDescription-button {
   display: block;
   background-color: #998AF9;
   margin-left: 0.4rem;
   margin-right: 0.4rem;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 1rem 1.2rem;
-  font-size: 1.2rem;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.4rem;
   font-weight:  400;
   letter-spacing: 0.1rem;
   border: none;
@@ -484,55 +488,39 @@
   transition: opacity .15s;
 }
 @media screen and (min-width: 690px) {
-  .description-button {
+  .ProjectDescription-button {
     margin-left: 0;
     margin-right: 0.8rem;
     padding: 1.6rem 2.2rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .ProjectDescription-button {
+    padding: 1.8rem 2.2rem;
+    font-size: 1.8rem;
   }
 }
 
-a.description-button {
+a.ProjectDescription-button {
   cursor: pointer;
 }
 
-a.description-button:hover {
+a.ProjectDescription-button:hover {
   opacity: 0.9;
 }
 
-.description-button--disabled { /* disabled button */
-  background-color: #cfcbdd;
-}
-
-.description-title {
-  font-size: 1.6rem;
+.ProjectDescription-platforms {
   line-height: 1;
-  margin: 0 0 0.3rem;
 }
-@media screen and (min-width: 690px) {
-  .description-title {
-    font-size: 2rem;
-  }
-}
-
-.description-subtitle {
-  font-size: 1.2rem;
-  margin: 0;
-}
-@media screen and (min-width: 690px) {
-  .description-subtitle {
-    font-size: 1.5rem;
-  }
-}
-
-.description-platform {
+.ProjectDescription-platform {
   max-width: 2.6rem;
   margin-left: 1.2rem;
   margin-right: 1.2rem;  
   margin-top: 1.6rem;
 }
 @media screen and (min-width: 690px) {
-  .description-platform {
+  .ProjectDescription-platform {
     max-width: 4rem;
     margin-left: 1.5rem;
     margin-right: 0;  
@@ -665,90 +653,109 @@ a.description-button:hover {
   }
 }
 
-/* --- LaunchBox */
+/* --- Action Box */
 
-.LaunchBox-space {
-  height: 2rem;
+.ActionBox-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
 }
-@media screen and (min-width: 690px) {
-  .LaunchBox-space {
-    height: 4rem;
+@media screen and (min-width: 390px) {
+  .ActionBox-buttons {
+    flex-direction: row;
   }
 }
 
-.LaunchBox-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.7rem 0;
+@media screen and (min-width: 690px) {
+  .ActionBox-buttons {
+    margin-top: 4rem;
+  }
+}
+.ActionBox-button {
+  display: block;
+  margin: 0 auto 0.4rem;
+  padding: 0.5rem 1.2rem;
   background-color: #998AF9;
   border-radius: 99rem;
   transition: opacity 0.15s;
-  max-width: 20.5rem;
-  margin: 0 auto;
 }
-.LaunchBox-button:hover {
+.ActionBox-button:hover {
   opacity: 0.9;
 }
+@media screen and (min-width: 390px) {
+  .ActionBox-button {
+    margin: 0 0.2rem;
+  }
+}
 @media screen and (min-width: 690px) {
-  .LaunchBox-button {
-    padding: 0.8rem 0;
-    max-width: 23.5rem;
+  .ActionBox-button {
+    margin: 0 0.6rem;
+    padding: 0.8rem 1.6rem;
   }
 }
 @media screen and (min-width: 960px) {
-  .LaunchBox-button {
-    max-width: 28rem;
+  .ActionBox-button {
+    padding: 0.9rem 1.8rem;
   }
 }
 
-.LaunchBox-platform {
-  max-width: 2.8rem;
-  margin-right: 0.8rem;
-}
-@media screen and (min-width: 690px) {
-  .LaunchBox-platform {
-    max-width: 3rem;
-    margin-right: 1.1rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .LaunchBox-platform {
-    max-width: 4rem;
-    margin-right: 1.6rem;
-  }
+.ActionBox-button-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.LaunchBox-description {
+.ActionBox-button-inner-p {
+  margin-right: 0;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 400;
+  line-height: 1;
   letter-spacing: 0.1rem;
+  text-align: left;
 }
 @media screen and (min-width: 690px) {
-  .LaunchBox-description {
-    font-size: 1.5rem;
+  .ActionBox-button-inner-p {
+    margin-right: 0.6rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 960px) {
-  .LaunchBox-description {
+  .ActionBox-button-inner-p {
     font-size: 1.8rem;
   }
 }
 
-.LaunchBox-label {
+.ActionBox-button-inner-icon {
+  max-width: 2.2rem;
+  margin-right: 0.5rem;
+}
+@media screen and (min-width: 690px) {
+  .ActionBox-button-inner-icon {
+    max-width: 3rem;
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .ActionBox-button-inner-icon {
+    max-width: 3.6rem;
+  }
+}
+
+.ActionBox-label {
   color: #a8a4ca;
   margin-top: 1.5rem;
   line-height: 1.5;
   font-size: 1.3rem;
 }
 @media screen and (min-width: 690px) {
-  .LaunchBox-label {
+  .ActionBox-label {
     font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 690px) {
-  .LaunchBox-label {
+  .ActionBox-label {
     font-size: 1.7rem;
   }
 }
@@ -852,4 +859,22 @@ a.description-button:hover {
   width: 1px;
   height: 100%;
   background-color: #887ce2;
+}
+
+/* --- mods */
+
+.pinkBg {
+  background-color: #C3A7FF;
+  border-color: #C3A7FF;
+}
+.blueBg {
+  background-color: #ABC3FF;
+  border-color: #ABC3FF;
+}
+.purpleBg {
+  background-color: #8793FF;
+  border-color: #8793FF;
+}
+.disabledBg {
+  background-color: #cfcbdd;
 }
