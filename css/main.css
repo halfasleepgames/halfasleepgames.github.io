@@ -483,7 +483,7 @@
   padding: 0.4rem;
 }
 @media screen and (min-width: 690px) {
-  .Nav-links-social {
+  .Nav-links-social-icon {
     padding: 0;
   }
 }
