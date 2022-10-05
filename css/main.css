@@ -286,40 +286,43 @@
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
-  padding: 1.2rem 0 0;
-  margin: 0 auto;
-}
-@media screen and (min-width: 410px) {
-  .Nav {
-    padding: 2rem 0 0;
-  }
+  padding: 1rem 0;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-bottom: #eeecf3 solid 0.1rem;
 }
 @media screen and (min-width: 690px) {
   .Nav {
-    padding: 3rem 0 6rem;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+    border-bottom: none;
   }
 }
 @media screen and (min-width: 960px) {
   .Nav {
-    padding: 3.6rem 0 8.6rem;
+    padding: 3.6rem 0;
+    margin-bottom: 6rem;
   }
 }
 
 .Nav-logo {
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
   width: 100%;
-  margin-bottom: 3rem;
+  z-index: 999;
 }
 @media screen and (min-width: 690px) {
   .Nav-logo {
     justify-content: flex-start;
-    margin-bottom: 0;
+    
   }
 }
-
 .Nav-logo-mark {
   display: block;
   max-width: 3.5rem;
@@ -384,28 +387,40 @@
 }
 
 .Nav-links {
-  display: none;
+  display: block;
+  position: absolute;
+  top: 5.8rem;
+  width: 100%;
+  background-color: #fff;
+  z-index: 998;
 }
 @media screen and (min-width: 690px) {
   .Nav-links {
+    position: relative;
     display: flex;
+    top: 0;
     justify-content: space-between;
     align-items: center;
+    width: auto;
   }
 }
 
 .Nav-links-page {
-  display: none;
+  display: block;
+  position: relative;
+  margin-right: 0;
+  padding: 2rem 0;
+  border-top: #eeecf3 solid 0.1rem;
+  font-size: 1.6rem;
+  font-weight:  400;
+  letter-spacing: 0.1rem;
+  line-height: 1;
 }
 @media screen and (min-width: 690px) {
   .Nav-links-page {
-    display: block;
     margin-right: 2rem;
     padding: 0.6rem 0;
-    font-size: 1.6rem;
-    font-weight:  400;
-    letter-spacing: 0.1rem;
-    line-height: 1;
+    border-top: none;
   }
 }
 @media screen and (min-width: 960px) {
@@ -422,11 +437,17 @@
 }
 
 .Nav-links-social {
-  display: none;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 5.4rem;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 1rem;
+  line-height: 1;
 }
 @media screen and (min-width: 690px) {
   .Nav-links-social {
-    display: block;
     width: 4.4rem;
     height: 4.4rem;
     border-style: solid;
@@ -447,6 +468,13 @@
     height: 5.8rem;
     border-width: 1.6rem;
   }
+}
+
+.Nav-links-social-icon {
+  width: auto;
+  max-width: auto;
+  height: 100%;
+  max-height: 100%;
 }
 
 /* --- Double Layer */
@@ -934,31 +962,63 @@ a.ProjectDescription-button:hover {
 .disabledBg {
   background-color: #cfcbdd;
 }
-.activeBrand {
-  border-bottom-style: solid;
-  border-bottom-width: 0.4rem; 
-  border-bottom-color: #998AF9; 
+@media screen and (min-width: 690px) {
+  .activeBrand {
+    border-bottom-style: solid;
+    border-bottom-width: 0.4rem; 
+    border-bottom-color: #998AF9; 
+  }
+  .inactiveBrand {
+    border-bottom-style: solid;
+    border-bottom-width: 0.4rem; 
+    border-bottom-color: transparent;
+    transition: border-bottom-color 0.15s ease-in-out;
+  }
+  .inactiveBrand:hover {
+    border-bottom-color: #998AF9; 
+  }
+  .activePink {
+    border-bottom-style: solid;
+    border-bottom-width: 0.4rem; 
+    border-bottom-color: #C3A7FF; 
+  }
+  .inactivePink {
+    border-bottom-style: solid;
+    border-bottom-width: 0.4rem; 
+    border-bottom-color: transparent;
+    transition: border-bottom-color 0.15s ease-in-out;
+  }
+  .inactivePink:hover {
+    border-bottom-color: #C3A7FF; 
+  }
 }
-.inactiveBrand {
-  border-bottom-style: solid;
-  border-bottom-width: 0.4rem; 
-  border-bottom-color: transparent;
-  transition: border-bottom-color 0.15s ease-in-out;
-}
-.inactiveBrand:hover {
-  border-bottom-color: #998AF9; 
-}
-.activePink {
-  border-bottom-style: solid;
-  border-bottom-width: 0.4rem; 
-  border-bottom-color: #C3A7FF; 
-}
-.inactivePink {
-  border-bottom-style: solid;
-  border-bottom-width: 0.4rem; 
-  border-bottom-color: transparent;
-  transition: border-bottom-color 0.15s ease-in-out;
-}
-.inactivePink:hover {
-  border-bottom-color: #C3A7FF; 
+@media screen and (min-width: 690px) {
+  .activeBrand {
+    border-bottom-style: solid;
+    border-bottom-width: 0.4rem; 
+    border-bottom-color: #998AF9; 
+  }
+  .inactiveBrand {
+    border-bottom-style: solid;
+    border-bottom-width: 0.4rem; 
+    border-bottom-color: transparent;
+    transition: border-bottom-color 0.15s ease-in-out;
+  }
+  .inactiveBrand:hover {
+    border-bottom-color: #998AF9; 
+  }
+  .activePink {
+    border-bottom-style: solid;
+    border-bottom-width: 0.4rem; 
+    border-bottom-color: #C3A7FF; 
+  }
+  .inactivePink {
+    border-bottom-style: solid;
+    border-bottom-width: 0.4rem; 
+    border-bottom-color: transparent;
+    transition: border-bottom-color 0.15s ease-in-out;
+  }
+  .inactivePink:hover {
+    border-bottom-color: #C3A7FF; 
+  }
 }
