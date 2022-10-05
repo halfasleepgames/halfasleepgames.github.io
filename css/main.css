@@ -217,12 +217,34 @@
   border: 0.1rem solid #f0ecfa;
 }
 
+/* --- Asset Logos */
+
+.AssetLogos {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (min-width: 690px) {
+  .AssetLogos {
+    flex-direction: row;
+  }
+}
+
 .AssetLogo {
+  display: block;
   border: 0.1rem solid #f0ecfa;
   background-color: #fff;
   background-image: url("../img/transparent.png");
   background-repeat: repeat;
   background-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 690px) {
+  .AssetLogo {
+    margin-bottom: 0;
+    flex-basis: 50%;
+  }
 }
 
 /* --- container */
