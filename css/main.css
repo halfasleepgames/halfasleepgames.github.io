@@ -94,7 +94,7 @@
   max-width: 84rem;
   font-size: 2rem;
   line-height: 1.4;
-  color: #a8a4ca;
+  color: #9c98c3;
 }
 @media screen and (min-width: 690px) {
   .Header-descriptionMd {
@@ -115,7 +115,7 @@
   max-width: 84rem;
   font-size: 1.4rem;
   line-height: 1.5;
-  color: #a8a4ca;
+  color: #9c98c3;
 }
 @media screen and (min-width: 410px) {
   .Header-descriptionSm {
@@ -547,7 +547,7 @@
   border-bottom-color: #C3A7FF;
 }
 .List-item-date {
-  color: #a8a4ca;
+  color: #9c98c3;
 }
 
 /* --- Double Layer */
@@ -685,131 +685,6 @@ a.ProjectDescription-button:hover {
   }
 }
 
-/* --- Cta */
-
-.Cta {
-  margin: 0 auto;
-  padding: 3rem 3rem 5rem;
-}
-@media screen and (min-width: 410px) {
-  .Cta {
-    max-width: 100%;
-  }
-}
-@media screen and (min-width: 690px) {
-  .Cta {
-    padding: 6rem 3rem 8rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Cta {
-    padding: 10rem 3rem 12rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .Cta {
-    padding: 12rem 3rem 14rem;
-  }
-}
-
-.Cta-h1 {
-  margin: 0;
-  font-size: 2.4rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  line-height: 1.55;
-}
-@media screen and (min-width: 370px) {
-  .Cta-h1 {
-    margin: 0;
-    font-size: 2.9rem;
-  }
-}
-@media screen and (min-width: 690px) {
-  .Cta-h1 {
-    margin: 0;
-    font-size: 4rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Cta-h1 {
-    font-size: 4.8rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .Cta-h1 {
-    font-size: 5.2rem;
-  }
-}
-
-.Cta-description {
-  margin-top: 1rem;
-  margin-bottom: 0;
-  font-size: 1.4rem;
-  line-height: 1.45;
-  color: #a8a4ca;
-}
-@media screen and (min-width: 370px) {
-  .Cta-description {
-    font-size: 1.7rem;
-  }
-}
-@media screen and (min-width: 690px) {
-  .Cta-description {
-    font-size: 2rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Cta-description {
-    font-size: 2.6rem;
-  }
-}
-
-.Cta-space {
-  height: 2rem;
-}
-@media screen and (min-width: 690px) {
-  .Cta-space {
-    height: 4rem;
-  }
-}
-
-.Cta-button {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  padding: 0.7rem 2rem;
-  background-color: #998AF9;
-  border-radius: 99rem;
-  transition: opacity 0.15s;
-  margin: 0 auto 1rem;
-}
-.Cta-button:hover {
-  opacity: 0.9;
-}
-@media screen and (min-width: 690px) {
-  .Cta-button {
-    padding: 0.8rem 2.4rem;
-  }
-}
-
-.Cta-label {
-  color: #fff;
-  font-size: 1.3rem;
-  font-weight: 400;
-  letter-spacing: 0.1rem;
-}
-@media screen and (min-width: 690px) {
-  .Cta-label {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .Cta-label {
-    font-size: 1.8rem;
-  }
-}
-
 /* --- Action Box */
 
 .ActionBox-buttons {
@@ -901,7 +776,7 @@ a.ProjectDescription-button:hover {
 }
 
 .ActionBox-label {
-  color: #a8a4ca;
+  color: #9c98c3;
   margin-top: 1.5rem;
   line-height: 1.5;
   font-size: 1.3rem;
