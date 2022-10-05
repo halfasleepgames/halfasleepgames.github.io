@@ -391,17 +391,20 @@
   position: absolute;
   top: 5.8rem;
   width: 100%;
-  background-color: #fff;
+  height: 100vh;
   z-index: 998;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 @media screen and (min-width: 690px) {
   .Nav-links {
     position: relative;
-    display: flex;
+    display: flex !important; 
     top: 0;
+    height: auto;
     justify-content: space-between;
     align-items: center;
     width: auto;
+    background-color: transparent;
   }
 }
 
@@ -410,6 +413,7 @@
   position: relative;
   margin-right: 0;
   padding: 2rem 0;
+  background-color: #fff;
   border-top: #eeecf3 solid 0.1rem;
   font-size: 1.6rem;
   font-weight:  400;
@@ -420,6 +424,7 @@
   .Nav-links-page {
     margin-right: 2rem;
     padding: 0.6rem 0;
+    background-color: transparent;
     border-top: none;
   }
 }
@@ -475,6 +480,12 @@
   max-width: auto;
   height: 100%;
   max-height: 100%;
+  padding: 0.4rem;
+}
+@media screen and (min-width: 690px) {
+  .Nav-links-social {
+    padding: 0;
+  }
 }
 
 /* --- Double Layer */
