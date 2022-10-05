@@ -159,8 +159,8 @@
 
 .Gallery {
   margin: 0 auto;
-  padding-top: 3rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
   padding-left: 3rem;
   padding-right: 3rem;
 }
@@ -172,19 +172,19 @@
 @media screen and (min-width: 690px) {
   .Gallery {
     padding-top: 6rem;
-    padding-bottom: 8rem;
+    padding-bottom: 3rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Gallery {
-    padding-top: 10rem;
-    padding-bottom: 12rem;
+    padding-top: 9rem;
+    padding-bottom: 4.5rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .Gallery {
     padding-top: 12rem;
-    padding-bottom: 14rem;
+    padding-bottom: 6rem;
   }
 }
 .Gallery:first-of-type{
