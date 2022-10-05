@@ -516,7 +516,6 @@
   padding-left: 2rem;
   text-align: left;
   font-size: 1.4rem;
-  line-height: 1.5;
   margin: 0 auto;
 }
 @media screen and (min-width: 690px) {
@@ -536,10 +535,11 @@
 }
 .List-item {
   margin-bottom: 1.2rem;
+  line-height: 1.8;
 }
 .List-item-publication {
   color: #5F4E9A;
-  font-weight: 400;
+  font-weight: 500;
 }
 .List-item-link {
   border-bottom-width: 0.2rem;
