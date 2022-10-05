@@ -1,11 +1,5 @@
 /* --- body */
 
-.js-fade-load,
-.js-fade-load2,
-.js-fade-content {
-  visibility: hidden;
-}
-
 .Body {
   position: relative; 
   font-family: 'Poppins', sans-serif;
