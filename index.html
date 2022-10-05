@@ -19,13 +19,14 @@
   <link rel="stylesheet" href="./css/root.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="icon" type="image/png" href="./img/favicon.png">
-  <!--
-  <script src="./scripts/scrollreveal.min.js"></script>
   <script src="./scripts/jquery-1.2.4.min.js"></script>
   <script>
-    window.sr = ScrollReveal();
+    $(document).ready(function(){
+      $("#toggler").click(function(){
+        $("#togglee").toggle();
+      });
+    });
   </script>
-  -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BDW1LFJY62"></script>
   <script>
@@ -45,18 +46,18 @@
       <a class="Nav-logo-type" href="./">
         half asleep
       </a>
-      <div class="Nav-logo-button">
+      <div id="toggler" class="Nav-logo-button">
         <img src="./img/menu.svg" alt="menu"/>
       </div>
     </div>
-    <div class="Nav-links">
+    <div id="togglee" class="Nav-links">
       <a class="Nav-links-page inactiveBrand" href="./melatonin">Melatonin</a>
       <a class="Nav-links-page inactivePink" href="./press">Press</a>
       <a class="Nav-links-social blueBg" href="https://www.twitter.com/halfasleepgames" target="_blank">
-        <img class="Nav-links-social-icon" src="img/Twitter.svg" alt="twitter"/>
+        <img class="Nav-links-social-icon" src="./img/Twitter.svg" alt="twitter"/>
       </a>
       <a class="Nav-links-social purpleBg" href="https://discord.gg/3s4mRqyyQz" target="_blank">
-        <img class="Nav-links-social-icon" src="img/discord.svg" alt="twitter"/>
+        <img class="Nav-links-social-icon" src="./img/discord.svg" alt="twitter"/>
       </a>
     </div>
   </nav>
