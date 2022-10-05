@@ -377,6 +377,7 @@
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.1rem;
+  white-space: nowrap;
 }
 @media screen and (min-width: 690px) {
   .Nav-logo-type {
