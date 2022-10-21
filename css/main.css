@@ -223,6 +223,9 @@
 
 .Asset {
   border: 0.1rem solid #f0ecfa;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 /* --- Asset Logos */
@@ -247,6 +250,9 @@
   background-repeat: repeat;
   background-size: 2rem;
   margin-bottom: 1.5rem;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 @media screen and (min-width: 690px) {
   .AssetLogo {
@@ -295,7 +301,7 @@
 }
 @media screen and (min-width: 690px) {
   .Bleed {
-    max-width: 100%;
+    max-width: 64rem;
   }
 }
 @media screen and (min-width: 960px) {
@@ -587,6 +593,9 @@
   margin: auto;
   z-index: 3;
   border: 0.1rem solid #f0ecfa;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   pointer-events: none;
 }
 
