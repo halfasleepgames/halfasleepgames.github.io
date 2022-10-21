@@ -138,6 +138,20 @@
   }
 }
 
+.Header-link {
+  position: relative;
+  color: #5F4E9A;
+  font-weight: 400;
+  border-bottom-width: 0.2rem;
+  border-bottom-style: solid;
+  border-bottom-color: #f0ecfa;
+  transition: border-bottom 0.15s;
+}
+
+.Header-link:hover {
+  border-bottom-color: #C3A7FF;
+}
+
 /* --- Page */
 
 .Page {
