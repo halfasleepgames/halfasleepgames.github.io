@@ -15,7 +15,7 @@
 
 .Header {
   margin: 0 auto;
-  padding: 0 2rem 5rem 2rem;
+  padding: 0 2rem 3.5rem 2rem;
 }
 @media screen and (min-width: 410px) {
   .Header {
@@ -24,17 +24,17 @@
 }
 @media screen and (min-width: 690px) {
   .Header {
-    padding: 0 3rem 8rem 3rem;
+    padding: 0 3rem 5.5rem 3rem;
   }
 }
 @media screen and (min-width: 960px) {
   .Header {
-    padding: 0 3rem 10rem 3rem;
+    padding: 0 3rem 7.5rem 3rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .Header {
-    padding: 0 3rem 12rem 3rem;
+    padding: 0 3rem 9.5rem 3rem;
   }
 }
 
