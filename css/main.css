@@ -29,12 +29,12 @@
 }
 @media screen and (min-width: 960px) {
   .Header {
-    padding: 0 3rem 11rem 3rem;
+    padding: 0 3rem 10rem 3rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .Header {
-    padding: 0 3rem 13rem 3rem;
+    padding: 0 3rem 12rem 3rem;
   }
 }
 
@@ -74,15 +74,22 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.4;
+  letter-spacing: -0.05rem;
 }
 @media screen and (min-width: 690px) {
   .Header-titleLg {
     font-size: 4.6rem;
   }
 }
+@media screen and (min-width: 960px) {
+  .Header-titleLg {
+    font-size: 5.2rem;
+  }
+}
 @media screen and (min-width: 1200px) {
   .Header-titleLg {
-    font-size: 5.4rem;
+    font-size: 6.2rem;
+    letter-spacing: -0.08rem;
   }
 }
 
@@ -94,6 +101,7 @@
   max-width: 84rem;
   font-size: 2rem;
   line-height: 1.4;
+  letter-spacing: -0.05rem;
   color: #9c98c3;
 }
 @media screen and (min-width: 690px) {
@@ -925,6 +933,10 @@ a.ProjectDescription-button:hover {
 .blueBg {
   background-color: #ABC3FF;
   border-color: #ABC3FF;
+}
+.purpleBlueBg {
+  background-color: #A496FC;
+  border-color: #A496FC;
 }
 .purpleBg {
   background-color: #8793FF;
