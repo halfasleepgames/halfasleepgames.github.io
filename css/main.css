@@ -269,6 +269,34 @@
   }
 }
 
+/* --- Asset Award */
+
+.AssetAwards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (min-width: 690px) {
+  .AssetAwards {
+    flex-direction: row;
+  }
+}
+
+.AssetAward {
+  display: block;
+  border: 0.1rem solid #f0ecfa;
+  background-color: #fff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+@media screen and (min-width: 690px) {
+  .AssetAward {
+    flex-basis: 33.33%;
+  }
+}
+
 /* --- container */
 
 .Container {
