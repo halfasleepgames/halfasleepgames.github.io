@@ -44,6 +44,7 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.4;
+  letter-spacing: -0.05rem;
 }
 @media screen and (min-width: 370px) {
   .Header-titleMd {
@@ -65,6 +66,7 @@
 @media screen and (min-width: 1200px) {
   .Header-titleMd {
     font-size: 5.2rem;
+    letter-spacing: -0.08rem;
   }
 }
 
@@ -755,10 +757,9 @@ a.ProjectDescription-button:hover {
     flex-direction: row;
   }
 }
-
 @media screen and (min-width: 690px) {
   .ActionBox-buttons {
-    margin-top: 4rem;
+    margin-top: 2.5rem;
   }
 }
 .ActionBox-button {
