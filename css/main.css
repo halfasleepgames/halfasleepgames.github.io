@@ -752,7 +752,7 @@ a.ProjectDescription-button:hover {
   justify-content: center;
   margin-top: 2rem;
 }
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 410px) {
   .ActionBox-buttons {
     flex-direction: row;
   }
@@ -773,7 +773,7 @@ a.ProjectDescription-button:hover {
 .ActionBox-button:hover {
   opacity: 0.9;
 }
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 410px) {
   .ActionBox-button {
     margin: 0 0.2rem;
   }
