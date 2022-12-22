@@ -835,6 +835,7 @@ a.ProjectDescription-button:hover {
 
 .ActionBox-label {
   color: #9c98c3;
+  padding: 0 1rem;
   margin-top: 1.5rem;
   line-height: 1.5;
   font-size: 1.3rem;
