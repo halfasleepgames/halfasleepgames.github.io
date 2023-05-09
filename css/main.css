@@ -104,7 +104,7 @@
   font-size: 2rem;
   line-height: 1.4;
   letter-spacing: -0.05rem;
-  color: #9c98c3;
+  color: #8984b3;
 }
 @media screen and (min-width: 690px) {
   .Header-descriptionMd {
@@ -125,7 +125,7 @@
   max-width: 84rem;
   font-size: 1.4rem;
   line-height: 1.5;
-  color: #9c98c3;
+  color: #8984b3;
 }
 @media screen and (min-width: 410px) {
   .Header-descriptionSm {
@@ -603,7 +603,7 @@
   border-bottom-color: #C3A7FF;
 }
 .List-item-date {
-  color: #9c98c3;
+  color: #8984b3;
 }
 
 /* --- Double Layer */
@@ -834,7 +834,7 @@ a.ProjectDescription-button:hover {
 }
 
 .ActionBox-label {
-  color: #9c98c3;
+  color: #8984b3;
   padding: 0 1rem;
   margin-top: 1.5rem;
   line-height: 1.5;
@@ -974,19 +974,33 @@ a.ProjectDescription-button:hover {
   background-color: #cfcbdd;
 }
 @media screen and (min-width: 690px) {
-  .activeBrand {
+  .activeBrand1 {
     border-bottom-style: solid;
     border-bottom-width: 0.4rem; 
     border-bottom-color: #998AF9; 
   }
-  .inactiveBrand {
+  .inactiveBrand1 {
     border-bottom-style: solid;
     border-bottom-width: 0.4rem; 
     border-bottom-color: transparent;
     transition: border-bottom-color 0.15s ease-in-out;
   }
-  .inactiveBrand:hover {
+  .inactiveBrand1:hover {
     border-bottom-color: #998AF9; 
+  }
+  .activeBrand2 {
+    border-bottom-style: solid;
+    border-bottom-width: 0.4rem; 
+    border-bottom-color: #8abef9; 
+  }
+  .inactiveBrand2 {
+    border-bottom-style: solid;
+    border-bottom-width: 0.4rem; 
+    border-bottom-color: transparent;
+    transition: border-bottom-color 0.15s ease-in-out;
+  }
+  .inactiveBrand2:hover {
+    border-bottom-color: #8abef9; 
   }
   .activePink {
     border-bottom-style: solid;
@@ -1004,19 +1018,33 @@ a.ProjectDescription-button:hover {
   }
 }
 @media screen and (min-width: 690px) {
-  .activeBrand {
+  .activeBrand1 {
     border-bottom-style: solid;
     border-bottom-width: 0.4rem; 
     border-bottom-color: #998AF9; 
   }
-  .inactiveBrand {
+  .inactiveBrand1 {
     border-bottom-style: solid;
     border-bottom-width: 0.4rem; 
     border-bottom-color: transparent;
     transition: border-bottom-color 0.15s ease-in-out;
   }
-  .inactiveBrand:hover {
+  .inactiveBrand1:hover {
     border-bottom-color: #998AF9; 
+  }
+  .activeBrand2 {
+    border-bottom-style: solid;
+    border-bottom-width: 0.4rem; 
+    border-bottom-color: #8abef9; 
+  }
+  .inactiveBrand2 {
+    border-bottom-style: solid;
+    border-bottom-width: 0.4rem; 
+    border-bottom-color: transparent;
+    transition: border-bottom-color 0.15s ease-in-out;
+  }
+  .inactiveBrand2:hover {
+    border-bottom-color: #8abef9; 
   }
   .activePink {
     border-bottom-style: solid;
