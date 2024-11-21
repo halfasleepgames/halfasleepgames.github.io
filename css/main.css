@@ -141,7 +141,7 @@ html {
   margin-right: auto;
   max-width: 84rem;
   font-size: 1.4rem;
-  line-height: 1.5;
+  line-height: 1.75;
   color: #8984b3;
 }
 @media screen and (min-width: 410px) {
@@ -775,6 +775,10 @@ a.ProjectDescription-button:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.ActionBox-button-inner--solo {
+  padding: 0 1rem;
 }
 
 .ActionBox-button-inner-p {
