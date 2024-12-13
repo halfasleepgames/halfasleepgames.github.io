@@ -246,46 +246,172 @@ html {
   }
 }
 
-/* --- Asset */
+/* --- Team */
 
-.Asset {
-  border: 0.1rem solid #f0ecfa;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-/* --- Asset Logos */
-
-.AssetLogos {
-  position: relative;
+.Team {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
   width: 100%;
 }
+@media screen and (min-width: 960px) {
+  .Team {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+  }
+}
+
+/* --- Team Member */
+
+.Team-member {
+  max-width: 42rem;
+  margin-bottom: 6.5rem;
+}
 @media screen and (min-width: 690px) {
-  .AssetLogos {
+  .Team-member {
+    max-width: 52rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Team-member {
+    max-width: 70rem;
+    flex-basis: 50%;
+    padding: 0 3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Team-member {
+    padding: 0 4.5rem;
+  }
+}
+
+/* --- Team Member Name */
+
+.Team-member-name {
+  margin: 0;
+  font-size: 3.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.05rem;
+}
+@media screen and (min-width: 690px) {
+  .Team-member-name {
+    font-size: 4.6rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Team-member-name {
+    font-size: 5.2rem;
+  }
+}
+
+/* --- Team Member Description */
+
+.Team-member-description {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #8984b3;
+}
+@media screen and (min-width: 690px) {
+  .Team-member-description {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .Team-member-description {
+    font-size: 2.1rem;
+  }
+}
+
+
+
+/* --- Team Member Pic */
+
+.Team-member-pic {
+  width: 22rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 690px) {
+  .Team-member-pic {
+    width: 28rem;
+  }
+}
+
+/* --- Team Member Action Box */
+
+.Team-member-ActionBox-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 410px) {
+  .Team-member-ActionBox-buttons {
     flex-direction: row;
   }
 }
+@media screen and (min-width: 690px) {
+  .Team-member-ActionBox-buttons {
+    margin-bottom: 3rem;
+  }
+}
 
-.AssetLogo {
+.Team-member-ActionBox-button {
   display: block;
-  border: 0.1rem solid #f0ecfa;
-  background-color: #fff;
-  background-image: url("../img/transparent.png");
-  background-repeat: repeat;
-  background-size: 2rem;
-  margin-bottom: 1.5rem;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  padding: 0.5rem 1.2rem;
+  margin-bottom: 0.5rem;
+  background-color: #998AF9;
+  border-radius: 99rem;
+  transition: opacity 0.15s;
+}
+.Team-member-ActionBox-button:hover {
+  opacity: 0.9;
+}
+@media screen and (min-width: 410px) {
+  .Team-member-ActionBox-button {
+    margin: 0 0.25rem;
+  }
+}
+
+.Team-member-ActionBox-button-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Team-member-ActionBox-button-inner-p {
+  margin-right: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.1rem;
+  text-align: left;
+}
+@media screen and (min-width: 410px) {
+  .Team-member-ActionBox-button-inner-p {
+    font-size: 1.3rem;
+  }
 }
 @media screen and (min-width: 690px) {
-  .AssetLogo {
-    margin-bottom: 0;
-    flex-basis: 50%;
+  .Team-member-ActionBox-button-inner-p {
+    font-size: 1.4rem;
   }
+}
+
+.Team-member-ActionBox-button-inner-icon {
+  max-width: 3rem;
+  margin-right: 0.2rem;
 }
 
 /* --- Asset Award */
@@ -425,8 +551,8 @@ html {
 }
 @media screen and (min-width: 690px) {
   .Nav-square {
-    width: 4.2rem;
-    height: 4.2rem;
+    width: 4rem;
+    height: 4rem;
     padding: 0.5rem;
   }
 }
@@ -456,7 +582,7 @@ html {
 @media screen and (min-width: 690px) {
   .Nav-logo-type {
     margin-left: 1.3rem;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 }
 @media screen and (min-width: 960px) {
